@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>外层框架</title>
+    <title>问诊系统</title>
     <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
     <link rel="stylesheet" type="text/css" href="../../css/index/index.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
@@ -20,25 +20,25 @@
         <div class="menu-list">
             <ul>
                 <div class="menu-list-content">
-                    <li><i class="fa fa-home"></i>
+                    <li onclick="toUrl(0)"><i class="fa fa-home"></i>
                         <h4>首页</h4>
                     </li>
-                    <li><i class="fa fa-hospital-o"></i>
+                    <li onclick="toUrl(1)"><i class="fa fa-hospital-o"></i>
                         <h4>预约管理</h4>
                     </li>
-                    <li><i class="fa fa-file-text-o"></i>
+                    <li onclick="toUrl(2)"><i class="fa fa-file-text-o"></i>
                         <h4>挂号</h4>
                     </li>
-                    <li><i class="	fa fa-stethoscope"></i>
+                    <li onclick="toUrl(3)"><i class="	fa fa-stethoscope"></i>
                         <h4>就诊</h4>
                     </li>
-                    <li><i class="fa fa-medkit"></i>
+                    <li onclick="toUrl(4)"><i class="fa fa-medkit"></i>
                         <h4>药物零售</h4>
                     </li>
-                    <li><i class="fa fa-bar-chart"></i>
+                    <li onclick="toUrl(5)"><i class="fa fa-bar-chart"></i>
                         <h4>报表管理</h4>
                     </li>
-                    <li><i class="fa fa-gear"></i>
+                    <li onclick="toUrl(6)"><i class="fa fa-gear"></i>
                         <h4>设置</h4>
                     </li>
                 </div>
@@ -58,14 +58,28 @@
             <div class="tag-history"><a><span>报表管理</span><i class="fa fa-times" aria-hidden="true"></i></a></div>
         </div>
         <div class="main-content">
-            <iframe src="../home/home.html"></iframe>
+            <iframe src="../home/home.html" "></iframe>
         </div>
     </div>
 
-    <script src="../../js/common/jquery/jquery-2.2.4.js"></script>
+    <script src="../../js/common/jquery/jquery-2.2.4.js "></script>
     <script>
-        var home = "../home/home.html";
-        var yuyue = "";
+        // var home = "../home/home.html ";
+        // var appointment = "../appointment/appointment.html ";
+        // var medicalAd = "../medicalAd/medicalAd.html ";
+        // var registration = "../registration/registration.html ";
+        // var report = "../report/report.html ";
+        // var retail = "../retail/retail.html ";
+        // var set = "../set/set.html ";
+        var url = ["../home/home.html ", "../appointment/appointment.html ",
+            "../registration/registration.html ", "../medicalAd/medicalAd.html ", "../retail/retail.html ", "../report/report.html ", "../set/set.html "
+        ]
+
+        function toUrl(id) {
+            var str = '<iframe src=" ' + url[id] + ' "></iframe>'
+            $(".main-content ").empty();
+            $(".main-content ").append(str)
+        }
     </script>
 </body>
 
