@@ -1,0 +1,33 @@
+#home {
+    height: 100%;
+    width: 100%;
+    background-color: #f5f6f9;
+}
+
+.home-panel {
+    padding: 20px;
+}
+
+.card-panel {
+    margin-left: 2%;
+    float: left;
+    height: 150px;
+    width: 22.5%;
+    background: #fff;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
+    border-radius: 10px;
+}
+
+.card-panel-description {
+    color: #4e5f6f;
+    float: right;
+    font-weight: 700;
+    padding: 40px;
+}
+
+.card-panel-description label {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
