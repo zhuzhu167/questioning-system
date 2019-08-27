@@ -4,30 +4,23 @@
 }
 
 html {
-    width: 100%;
     height: 100%;
+    width: 100%;
+
     font-size: 12px;
-    min-width: 1024px;
 }
 
 body {
-    width: 100%;
     height: 100%;
+    width: 100%;
     background: #f1f1f1;
 }
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 99.5%;
     border: none;
 }
-
-
-/* @media only screen and (min-width: 1400px) {
-    .card-panel {
-        width: 22.5%;
-    }
-} */
 
 ::-webkit-scrollbar {
     /*滚动条整体样式*/
@@ -101,6 +94,14 @@ iframe {
     width: 49.5%;
 }
 
+.lz-main{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px 20px;
+    margin: 0 10px 0 10px;
+    height: 100%;
+}
+
 .lz-form {
     margin-bottom: 5px;
 }
@@ -117,14 +118,14 @@ iframe {
 .lz-form-item-label {
     display: inline-block !important;
     display: inline;
-    padding-right: 10px;
+    padding-right: 5px;
     font-size: 14px;
-    min-width: 70px;
+    min-width: 55px;
     text-align: right;
 }
 
 .lz-form-item-input {
-    width: calc(100% - 85px);
+    width: calc(100% - 70px);
     -webkit-appearance: none;
     background-color: #fff;
     background-image: none;
@@ -152,7 +153,7 @@ iframe {
 .lz-form-head {
     display: inline-block !important;
     display: inline;
-    margin: 5px 15px 20px 8px;
+    margin: 5px 15px 20px 0;
     padding: 10px 20px;
     background-color: #2e69eb;
     color: #fff;
