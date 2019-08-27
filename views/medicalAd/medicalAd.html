@@ -5,10 +5,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>就诊</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
 </head>
+<style>
+    html {
+        overflow: hidden;
+    }
+    
+    #medicalAd {
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 20px;
+        height: 100%;
+    }
+    
+    .medicalAd-head {
+        padding: 10px;
+    }
+    
+    .medicalAd-content {
+        margin-top: 20px;
+    }
+    
+    .user-mess {
+        width: 500px;
+        padding: 10px;
+        height: 700px;
+        overflow: auto;
+        margin-right: 0px;
+        float: left;
+        border: 1px solid #ccc
+    }
+    
+    .confirm {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .confirm button {
+        width: 100%;
+    }
+    
+    .total {
+        padding: 20px 10px;
+    }
+    
+    .total label span button {
+        display: inline-block;
+    }
+    
+    .total label {
+        font-size: 20px;
+        color: #2e69eb;
+        font-weight: 700;
+    }
+    
+    .total span {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    
+    .total button {
+        float: right;
+        height: 30px;
+        font-size: 10px;
+        padding: 8px 15px;
+    }
+    
+    .medicalAd-history {
+        float: left;
+        width: calc(100% - 550px);
+        height: 100%;
+        padding: 10px;
+        border: 1px solid #ccc
+    }
+</style>
 
 <body>
+    <div id="medicalAd">
+        <div class="medicalAd-content">
+            <div class="user-mess">
+                <div>
+                    <div class="medicalAd-head">
+                        <h2>新增挂号</h2>
+                    </div>
+                    <form id="base-mess" class="lz-form">
+                        <div>
+                            <div class="lz-form-head">
+                                基本信息
+                            </div>
+                        </div>
+                        <div class="lz-form-row">
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">姓名</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">年龄</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                        </div>
+                        <div class="lz-form-row">
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">性别</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">出生日期</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                        </div>
+                        <div class="lz-form-row">
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">卡号</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">手机号</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                        </div>
+                        <div class=" lz-form-row">
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">病人性质</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">身份证</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                        </div>
+                        <div class="lz-form-row">
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">地址</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">备注</label>
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                        </div>
 
+                    </form>
+
+                    <form class="lz-form">
+                        <div>
+                            <div class="lz-form-head">
+                                科室信息
+                            </div>
+                        </div>
+                        <div class="lz-form-row">
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">医生</label>
+                                <input class="lz-form-item-input" type="text">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">科室</label>
+                                <input class="lz-form-item-input" type="text">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="lz-form">
+                        <div>
+                            <div class="lz-form-head">
+                                收费信息
+                            </div>
+                        </div>
+                        <div class="lz-form-row">
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">挂号费</label>
+                                <input class="lz-form-item-input" type="text">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                            <div class="lz-col-2 lz-form-item">
+                                <label class="lz-form-item-label">诊金</label>
+                                <input class="lz-form-item-input" type="text">
+                                <span class="lz-form-item-help"></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="total">
+                        <label>合计:</label>
+                        <span>1233元</span>
+                        <button class="lz-btn lz-btn-primary">附加费</button>
+                    </div>
+                    <div class="confirm">
+                        <button type="button" class="lz-btn lz-btn-primary">确定收费</button>
+                    </div>
+                </div>
+            </div>
+            <div class="medicalAd-history">
+                <div class="medicalAd-head">
+                    <h2>挂号列表</h2>
+                </div>
+                <div>
+                    表格
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

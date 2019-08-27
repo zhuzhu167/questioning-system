@@ -1,30 +1,43 @@
 #home {
-    margin: 10px;
     height: 100%;
     border-radius: 5px;
     padding: 20px;
-    background-color: #f5f6f9;
+    background-color: #fff;
+    margin: 0 10px 0 10px;
+    overflow: auto;
 }
 
 .home-panel {
     padding: 20px;
 }
 
+@media only screen and (min-width: 1400px) {
+    .card-panel {
+        width: 22.5%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .card-panel {
+        width: 47%;
+        margin-top: 20px;
+    }
+}
+
 .card-panel {
     margin-left: 2%;
-    float: left;
+    display: inline-block;
     height: 150px;
-    width: 22.5%;
-    background: #fff;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
     border-radius: 10px;
 }
 
 .card-panel-description {
-    color: #4e5f6f;
+    color: #fff;
     float: right;
     font-weight: 700;
     padding: 40px;
+    font-size: 15px;
 }
 
 .card-panel-description label {

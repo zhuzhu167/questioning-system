@@ -6,12 +6,14 @@
 html {
     width: 100%;
     height: 100%;
+    font-size: 12px;
+    min-width: 1024px;
 }
 
 body {
     width: 100%;
     height: 100%;
-    background: #f1f1f1
+    background: #f1f1f1;
 }
 
 iframe {
@@ -20,13 +22,41 @@ iframe {
     border: none;
 }
 
-.btn-group {
+
+/* @media only screen and (min-width: 1400px) {
+    .card-panel {
+        width: 22.5%;
+    }
+} */
+
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 6px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #EDEDED;
+}
+
+.lz-btn-group {
     position: relative;
     display: inline-block;
     vertical-align: middle;
 }
 
-.btn {
+.lz-btn {
     display: inline-block;
     line-height: 1;
     white-space: nowrap;
@@ -49,7 +79,83 @@ iframe {
     border-radius: 4px;
 }
 
-.btn:focus {
-    background-color: #409EFF;
+.lz-btn-default:hover {
+    color: #2e69eb;
+}
+
+.lz-btn-default:active {
+    background-color: #2e69eb;
     color: #fff;
+}
+
+.lz-btn-primary {
+    background-color: #2e69eb;
+    color: #fff;
+}
+
+.lz-col-1 {
+    width: 99.5%;
+}
+
+.lz-col-2 {
+    width: 49.5%;
+}
+
+.lz-form {
+    margin-bottom: 5px;
+}
+
+.lz-form-row {
+    margin-bottom: 5px;
+}
+
+.lz-form-item {
+    display: inline-block;
+    height: 50px;
+}
+
+.lz-form-item-label {
+    display: inline-block !important;
+    display: inline;
+    padding-right: 10px;
+    font-size: 14px;
+    min-width: 70px;
+    text-align: right;
+}
+
+.lz-form-item-input {
+    width: calc(100% - 85px);
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    margin-bottom: 3px;
+}
+
+.lz-form-item-help {
+    font-size: 10px;
+    color: #ef4b4b;
+    margin-left: 85px;
+    margin-top: 5px;
+}
+
+.lz-form-head {
+    display: inline-block !important;
+    display: inline;
+    margin: 5px 15px 20px 8px;
+    padding: 10px 20px;
+    background-color: #2e69eb;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
 }
