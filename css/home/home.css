@@ -1,3 +1,11 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    background: #f1f1f1;
+}
+
 .home-panel {
     margin-bottom: 20px;
 }

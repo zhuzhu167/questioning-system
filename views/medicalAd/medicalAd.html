@@ -4,77 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>就诊</title>
+    <title>挂号</title>
     <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/medicalAd/medicalAd.css">
 </head>
 <style>
-    html {
-        overflow: hidden;
-    }
 
-    .medicalAd-head {
-        padding: 10px;
-    }
-
-    .medicalAd-content {
-        height: calc(100% - 25px);
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    .user-mess {
-        width: 500px;
-        float: left;
-        border-right: 1px solid #efefef;
-        height: 100%;
-        overflow: auto;
-        box-sizing: border-box;
-        padding: 10px 20px;
-    }
-
-    .confirm {
-        width: 100%;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .confirm button {
-        width: 100%;
-    }
-
-    .total {
-        padding: 20px 10px;
-    }
-
-    .total label span button {
-        display: inline-block;
-    }
-
-    .total label {
-        font-size: 20px;
-        color: #2e69eb;
-        font-weight: 700;
-    }
-
-    .total span {
-        margin-left: 20px;
-        font-size: 14px;
-    }
-
-    .total button {
-        float: right;
-        height: 30px;
-        font-size: 10px;
-        padding: 8px 15px;
-    }
-
-    .medicalAd-history {
-        float: left;
-        width: calc(100% - 500px);
-        height: 100%;
-        box-sizing: border-box;
-        padding: 10px 10px 0;
-    }
 </style>
 
 <body>
@@ -94,70 +29,60 @@
                         <div class="lz-form-row">
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">姓名</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">年龄</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class="lz-form-row">
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">性别</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">出生日期</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class="lz-form-row">
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">卡号</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">手机号</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class=" lz-form-row">
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">病人性质</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">身份证</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class="lz-form-row">
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">地址</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                             <div class="lz-col-2 lz-form-item">
                                 <label class="lz-form-item-label">备注</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true"
-                                    data-bv-require-error="*必填项">
+                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>

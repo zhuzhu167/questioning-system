@@ -1,0 +1,39 @@
+html {
+    overflow: hidden;
+}
+
+.appointment-content {
+    margin-top: 10px;
+    height: calc(100% - 80px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex
+}
+
+.user-mess {
+    min-width: 500px;
+    flex: 5;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.confirm {
+    width: 100%;
+    margin: auto;
+}
+
+.confirm button {
+    width: 100%;
+}
+
+.appointment-history {
+    min-width: 1000px;
+    flex: 10;
+    width: calc(100% - 500px);
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 0;
+}

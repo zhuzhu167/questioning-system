@@ -1,0 +1,68 @@
+html {
+    overflow: hidden;
+}
+
+.medicalAd-head {
+    padding: 10px;
+}
+
+.medicalAd-content {
+    height: calc(100% - 25px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+}
+
+.user-mess {
+    min-width: 500px;
+    flex: 5;
+    border-right: 1px solid #ccc;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.confirm {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.confirm button {
+    width: 100%;
+}
+
+.total {
+    padding: 20px 10px;
+}
+
+.total label span button {
+    display: inline-block;
+}
+
+.total label {
+    font-size: 20px;
+    color: #2e69eb;
+    font-weight: 700;
+}
+
+.total span {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.total button {
+    float: right;
+    height: 30px;
+    font-size: 10px;
+    padding: 8px 15px;
+}
+
+.medicalAd-history {
+    min-width: 1000px;
+    flex: 10;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 0;
+}

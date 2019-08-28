@@ -4,11 +4,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>挂号</title>
+    <title>就诊</title>
+    <link rel="stylesheet" type="text/css" href="../../css/registration/registration.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common/element-ui.css">
 </head>
+<style>
+
+</style>
+
 
 <body>
+    <div id="registration" class="lz-main">
+        <div class="reg-left">
+            <div class="reg-left-head">
+                <h3>今日就诊</h3>
+            </div>
+            <form class="lz-form">
+                <div class="lz-form-row reg-search-form">
+                    <div class="lz-col-1 lz-form-item">
+                        <label class="lz-form-item-label">日期</label>
+                        <input class="lz-form-item-input reg-search-form-input" type="text">
+                        <span class="lz-form-item-help"></span>
+                    </div>
+                    <div class="lz-col-1 lz-form-item">
+                        <label class="lz-form-item-label">姓名</label>
+                        <input class="lz-form-item-input reg-search-form-input" type="text">
+                        <span class="lz-form-item-help"></span>
+                    </div>
+                </div>
+            </form>
+            <div class="confirm">
+                <div class="confirm">
+                    <button type="button" class="lz-btn lz-btn-primary">快速就诊</button>
+                </div>
+            </div>
+        </div>
+        <div class="reg-main">
+            <div class="visited">
+                <label class="el-radio " aria-checked="true">
+                    <!-- 选中状态需添加 css is-checked -->
+                    <span class="el-radio__input is-checked">
+                        <span class="el-radio__inner"></span>
+                        <input type="radio" aria-hidden="true" class="el-radio__original">
+                    </span>
+                    <span class="el-radio__label">初诊</span>
+                </label>
+                <label class="el-radio">
+                    <span class="el-radio__input ">
+                        <span class="el-radio__inner"></span>
+                        <input type="radio" aria-hidden="true" class="el-radio__original">
+                    </span>
+                    <span class="el-radio__label">复诊</span>
+                </label>
+            </div>
+            <div class="diagnosis-form">
+                <form class="lz-form">
+                    <div class="lz-form-row ">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label ">主述</label>
+                            <input class="lz-form-item-input " type="text">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label ">现病史</label>
+                            <input class="lz-form-item-input " type="text">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label ">其他检查</label>
+                            <input class="lz-form-item-input " type="text">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label ">诊断</label>
+                            <input class="lz-form-item-input " type="text">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="prescription-box">
 
+                <div class="el-tabs__header is-top">
+                    <div class="el-tabs__nav-wrap is-top">
+                        <div class="el-tabs__nav-scroll">
+                            <div class="el-tabs__nav is-top" style="transform: translateX(0px);">
+                                <div class="el-tabs__item is-top is-active">西成药</div>
+                                <div class="el-tabs__item is-top">中药</div>
+                                <div class="el-tabs__item is-top">项目</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prescription-content">
+                    <div class="pc-form">
+                        <form class="lz-form">
+                            <div class="lz-form-row ">
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">组号</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">药品</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                            </div>
+                            <div class="lz-form-row ">
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">剂量</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">用法</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                            </div>
+                            <div class="lz-form-row ">
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">天数</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">频次</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                            </div>
+                            <div class="lz-form-row ">
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">总量</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label "></label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                            </div>
+                            <div class="lz-form-row ">
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">单价</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-2 lz-form-item">
+                                    <label class="lz-form-item-label ">金额</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                            </div>
+                            <div class="lz-form-row ">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label ">医嘱</label>
+                                    <input class="lz-form-item-input " type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="pc-page">
+                        <div class="pc-page-content">
+                            <div class="page-head">
+                                <h2>Rx</h2>
+                            </div>
+                            <div class="page-text"></div>
+                        </div>
+                        <div class="pc-page-money">西成药金额 :<span>0元</span></div>
+                    </div>
+                </div>
+                <div class="surcharge-btn">
+                    <button type="button" class="lz-btn lz-btn-primary">+ 附加费</button>
+                </div>
+            </div>
+            <div class="prescription-total-box">
+                <div class="lz-total">合计<span>0元</span></div>
+                <div class="lz-total-btn">
+                    <button type="button" class="lz-btn lz-btn-primary">保存</button>
+                    <button type="button" class="lz-btn lz-btn-primary">收费</button>
+                </div>
+            </div>
+        </div>
+        <div class="reg-right">
+            <div class="reg-right-content">
+                <div class="lz-form-head">就医轨迹</div>
+                <div class="detail"></div>
+            </div>
+            <div class="reg-right-content">
+                <div class="lz-form-head">处方推荐</div>
+                <div class="detail"></div>
+            </div>
+            <div class="reg-right-content">
+                <div class="lz-form-head">医疗范文</div>
+                <div class="detail"></div>
+            </div>
+        </div>
+    </div>
+    <script></script>
 </body>
 
 </html>

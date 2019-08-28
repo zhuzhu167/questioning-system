@@ -6,7 +6,6 @@
 html {
     height: 100%;
     width: 100%;
-
     font-size: 12px;
 }
 
@@ -94,7 +93,7 @@ iframe {
     width: 49.5%;
 }
 
-.lz-main{
+.lz-main {
     border-radius: 5px;
     background-color: #fff;
     padding: 15px 20px;
@@ -118,10 +117,9 @@ iframe {
 .lz-form-item-label {
     display: inline-block !important;
     display: inline;
-    padding-right: 5px;
-    font-size: 14px;
-    min-width: 55px;
-    text-align: right;
+    font-size: 13px;
+    margin: 4.5px 5px;
+    margin-right: 0px;
 }
 
 .lz-form-item-input {
@@ -141,6 +139,7 @@ iframe {
     padding: 0 15px;
     transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
     margin-bottom: 3px;
+    float: right;
 }
 
 .lz-form-item-help {
@@ -154,9 +153,30 @@ iframe {
     display: inline-block !important;
     display: inline;
     margin: 5px 15px 20px 0;
-    padding: 10px 20px;
+    padding: 7px 15px;
     background-color: #2e69eb;
     color: #fff;
     text-align: center;
-    border-radius: 4px;
+}
+
+.lz-total {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.lz-total span {
+    margin-left: 20px;
+    color: #2e69eb;
+}
+
+.lz-total-btn {
+    display: inline-block;
+    float: right;
+}
+
+.lz-total-btn button {
+    background-color: #ffffff;
+    color: #2e69eb;
+    border: 1px solid #2e69eb;
 }
