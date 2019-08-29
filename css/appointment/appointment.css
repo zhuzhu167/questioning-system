@@ -2,22 +2,26 @@ html {
     overflow: hidden;
 }
 
+
 .appointment-content {
     margin-top: 10px;
-    height: calc(100% - 80px);
+    height: 100%;
     border: 1px solid #ccc;
     border-radius: 4px;
-    display: flex
+    display: flex;
+    overflow: auto;
+
 }
 
 .user-mess {
     min-width: 500px;
     flex: 5;
     border-right: 1px solid #ccc;
-    height: 100%;
+    height: 700px;
     overflow: auto;
     box-sizing: border-box;
     padding: 10px 20px;
+    display: inline;
 }
 
 .confirm {
