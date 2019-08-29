@@ -21,6 +21,9 @@ iframe {
     border: none;
 }
 
+
+/* 滑动条 */
+
 ::-webkit-scrollbar {
     /*滚动条整体样式*/
     width: 6px;
@@ -41,6 +44,9 @@ iframe {
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     background: #EDEDED;
 }
+
+
+/* 按钮 */
 
 .lz-btn-group {
     position: relative;
@@ -85,12 +91,19 @@ iframe {
     color: #fff;
 }
 
+.lz-btn-primary:active {
+    background-color: #0F3B99;
+}
+
+
+/* 布局 */
+
 .lz-col-1 {
-    width: 99.5%;
+    flex: 1;
 }
 
 .lz-col-2 {
-    width: 49.5%;
+    flex: 2;
 }
 
 .lz-main {
@@ -101,12 +114,15 @@ iframe {
     height: 100%;
 }
 
+
+/* 表单 */
+
 .lz-form {
     margin-bottom: 5px;
 }
 
 .lz-form-row {
-    margin-bottom: 5px;
+    display: flex;
 }
 
 .lz-form-item {
@@ -138,15 +154,17 @@ iframe {
     outline: 0;
     padding: 0 15px;
     transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
-    margin-bottom: 3px;
     float: right;
+}
+
+.lz-form-item-input:focus {
+    border-color: #2e60eb;
 }
 
 .lz-form-item-help {
     font-size: 10px;
     color: #ef4b4b;
-    margin-left: 85px;
-    margin-top: 5px;
+    margin-left: 75px;
 }
 
 .lz-form-head {
@@ -158,6 +176,9 @@ iframe {
     color: #fff;
     text-align: center;
 }
+
+
+/* 统计价格栏 */
 
 .lz-total {
     font-size: 20px;
@@ -179,4 +200,32 @@ iframe {
     background-color: #ffffff;
     color: #2e69eb;
     border: 1px solid #2e69eb;
+}
+
+
+/* 单选框 */
+
+.lz-RadioStyle input {
+    display: none
+}
+
+.lz-RadioStyle label {
+    border: 1px solid #dcdfe6;
+    color: #000;
+    padding: 2px 10px 2px 5px;
+    line-height: 28px;
+    min-width: 80px;
+    text-align: center;
+    float: left;
+    margin: 2px;
+    border-radius: 4px
+}
+
+.lz-RadioStyle input:checked+label {
+    background-color: #2e60eb;
+    color: #fff;
+}
+
+.lz-RadioStyle input:disabled+label {
+    opacity: 0.7;
 }

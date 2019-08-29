@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/registration/registration.css">
     <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
     <link rel="stylesheet" type="text/css" href="../../css/common/element-ui.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/datepicker/css/dcalendar.picker.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/select/css/nice-select.css">
 </head>
 <style>
 
@@ -24,9 +26,16 @@
                 <div class="lz-form-row reg-search-form">
                     <div class="lz-col-1 lz-form-item">
                         <label class="lz-form-item-label">日期</label>
-                        <input class="lz-form-item-input reg-search-form-input" type="text">
+                        <input id="re-now" class="reg-search-form-input lz-form-item-input " type="text">
                         <span class="lz-form-item-help"></span>
                     </div>
+                    <div class="lz-col-1 lz-form-item">
+                        <label class="lz-form-item-label" style="text-align: center;">至</label>
+                        <input id="re-toDate" class="lz-form-item-input reg-search-form-input" type="text">
+                        <span class="lz-form-item-help"></span>
+                    </div>
+                </div>
+                <div class="lz-form-row reg-search-form">
                     <div class="lz-col-1 lz-form-item">
                         <label class="lz-form-item-label">姓名</label>
                         <input class="lz-form-item-input reg-search-form-input" type="text">
@@ -42,21 +51,14 @@
         </div>
         <div class="reg-main">
             <div class="visited">
-                <label class="el-radio " aria-checked="true">
-                    <!-- 选中状态需添加 css is-checked -->
-                    <span class="el-radio__input is-checked">
-                        <span class="el-radio__inner"></span>
-                        <input type="radio" aria-hidden="true" class="el-radio__original">
-                    </span>
-                    <span class="el-radio__label">初诊</span>
-                </label>
-                <label class="el-radio">
-                    <span class="el-radio__input ">
-                        <span class="el-radio__inner"></span>
-                        <input type="radio" aria-hidden="true" class="el-radio__original">
-                    </span>
-                    <span class="el-radio__label">复诊</span>
-                </label>
+                <div class="lz-RadioStyle">
+                    <div class="lz-Block PaddingL">
+                        <input type="radio" name="lz-Storage" id="model1" checked/>
+                        <label for="model1">初诊</label>
+                        <input type="radio" name="lz-Storage" id="model2" />
+                        <label for="model2">复诊</label>
+                    </div>
+                </div>
             </div>
             <div class="diagnosis-form">
                 <form class="lz-form">
@@ -66,26 +68,37 @@
                             <input class="lz-form-item-input " type="text">
                             <span class="lz-form-item-help"></span>
                         </div>
+
+                    </div>
+                    <div class="lz-form-row">
                         <div class="lz-col-1 lz-form-item">
                             <label class="lz-form-item-label ">现病史</label>
                             <input class="lz-form-item-input " type="text">
                             <span class="lz-form-item-help"></span>
                         </div>
+                    </div>
+                    <div class="lz-form-row">
                         <div class="lz-col-1 lz-form-item">
                             <label class="lz-form-item-label ">家族史</label>
                             <input class="lz-form-item-input " type="text">
                             <span class="lz-form-item-help"></span>
                         </div>
+                    </div>
+                    <div class="lz-form-row">
                         <div class="lz-col-1 lz-form-item">
                             <label class="lz-form-item-label ">体格检查</label>
                             <input class="lz-form-item-input " type="text">
                             <span class="lz-form-item-help"></span>
                         </div>
+                    </div>
+                    <div class="lz-form-row">
                         <div class="lz-col-1 lz-form-item">
                             <label class="lz-form-item-label ">其他检查</label>
                             <input class="lz-form-item-input " type="text">
                             <span class="lz-form-item-help"></span>
                         </div>
+                    </div>
+                    <div class="lz-form-row">
                         <div class="lz-col-1 lz-form-item">
                             <label class="lz-form-item-label ">诊断</label>
                             <input class="lz-form-item-input " type="text">
@@ -95,25 +108,20 @@
                 </form>
             </div>
             <div class="prescription-box">
+                <div class="pr-select">
 
-                <div class="el-tabs__header is-top">
-                    <div class="el-tabs__nav-wrap is-top">
-                        <div class="el-tabs__nav-scroll">
-                            <div class="el-tabs__nav is-top" style="transform: translateX(0px);">
-                                <div class="el-tabs__item is-top is-active">西成药</div>
-                                <div class="el-tabs__item is-top">中药</div>
-                                <div class="el-tabs__item is-top">项目</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="prescription-content">
                     <div class="pc-form">
                         <form class="lz-form">
                             <div class="lz-form-row ">
-                                <div class="lz-col-2 lz-form-item">
+                                <div class="lz-col-1 lz-form-item">
                                     <label class="lz-form-item-label ">组号</label>
-                                    <input class="lz-form-item-input " type="text">
+                                    <select id="re-number">
+                                            <option value="0">请选择</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                          </select>
                                     <span class="lz-form-item-help"></span>
                                 </div>
                                 <div class="lz-col-2 lz-form-item">
@@ -123,7 +131,7 @@
                                 </div>
                             </div>
                             <div class="lz-form-row ">
-                                <div class="lz-col-2 lz-form-item">
+                                <div class="lz-col-1 lz-form-item">
                                     <label class="lz-form-item-label ">剂量</label>
                                     <input class="lz-form-item-input " type="text">
                                     <span class="lz-form-item-help"></span>
@@ -135,7 +143,7 @@
                                 </div>
                             </div>
                             <div class="lz-form-row ">
-                                <div class="lz-col-2 lz-form-item">
+                                <div class="lz-col-1 lz-form-item">
                                     <label class="lz-form-item-label ">天数</label>
                                     <input class="lz-form-item-input " type="text">
                                     <span class="lz-form-item-help"></span>
@@ -147,24 +155,29 @@
                                 </div>
                             </div>
                             <div class="lz-form-row ">
-                                <div class="lz-col-2 lz-form-item">
-                                    <label class="lz-form-item-label ">总量</label>
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">总量</label>
                                     <input class="lz-form-item-input " type="text">
                                     <span class="lz-form-item-help"></span>
                                 </div>
                                 <div class="lz-col-2 lz-form-item">
-                                    <label class="lz-form-item-label "></label>
-                                    <input class="lz-form-item-input " type="text">
+                                    <label class="lz-form-item-label" style="margin-left: 20px;">——</label>
+                                    <select id="re-aggregate">
+                                            <option value="0">请选择</option>
+                                            <option value="1">包</option>
+                                            <option value="2">颗</option>
+                                            <option value="3">瓶</option>
+                                          </select>
                                     <span class="lz-form-item-help"></span>
                                 </div>
                             </div>
                             <div class="lz-form-row ">
-                                <div class="lz-col-2 lz-form-item">
+                                <div class="lz-col-1 lz-form-item">
                                     <label class="lz-form-item-label ">单价</label>
                                     <input class="lz-form-item-input " type="text">
                                     <span class="lz-form-item-help"></span>
                                 </div>
-                                <div class="lz-col-2 lz-form-item">
+                                <div class="lz-col-1 lz-form-item">
                                     <label class="lz-form-item-label ">金额</label>
                                     <input class="lz-form-item-input " type="text">
                                     <span class="lz-form-item-help"></span>
@@ -216,7 +229,22 @@
             </div>
         </div>
     </div>
-    <script></script>
+    <script src="../../js/common/jquery/jquery-2.2.4.js"></script>
+    <script src="../../plugin/bootstrapValidator/js/bootstrapValidator.js"></script>
+    <script src="../../plugin/datepicker/js/dcalendar.picker.js"></script>
+    <script src="../../plugin/select/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(function() {
+            $('#re-now').dcalendarpicker({
+                format: 'yyyy-mm-dd'
+            })
+            $('#re-toDate').dcalendarpicker({
+                format: 'yyyy-mm-dd'
+            })
+            $('#re-number').niceSelect();
+            $('#re-aggregate').niceSelect();
+        });
+    </script>
 </body>
 
 </html>

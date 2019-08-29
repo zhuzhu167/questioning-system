@@ -7,6 +7,8 @@
     <title>挂号</title>
     <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
     <link rel="stylesheet" type="text/css" href="../../css/medicalAd/medicalAd.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/datepicker/css/dcalendar.picker.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/select/css/nice-select.css">
 </head>
 <style>
 
@@ -27,60 +29,71 @@
                             </div>
                         </div>
                         <div class="lz-form-row">
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">姓名</label>
                                 <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">年龄</label>
                                 <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class="lz-form-row">
-                            <div class="lz-col-2 lz-form-item">
-                                <label class="lz-form-item-label">性别</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                            <div class="lz-col-1 lz-form-item" style="float: right;">
+                                <label class="lz-form-item-label">出生日期</label>
+                                <input id="me-birthday" class="lz-form-item-input" autocomplete="off" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-2 lz-form-item">
-                                <label class="lz-form-item-label">出生日期</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                            <div class="lz-col-1 lz-form-item" style="float: left;">
+                                <label class="lz-form-item-label">性别</label>
+                                <!-- <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项"> -->
+                                <select id="me-sex">
+                                            <option value="0">请选择</option>
+                                            <option value="1">男</option>
+                                            <option value="2">女</option>
+                                          </select>
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class="lz-form-row">
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">卡号</label>
                                 <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">手机号</label>
                                 <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class=" lz-form-row">
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">病人性质</label>
-                                <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                <select id="me-nature">
+                                        <option value="0">请选择</option>
+                                        <option value="1">自费</option>
+                                        <option value="2">医保</option>
+                                        <option value="3">民政</option>
+                                        <option value="4">农保</option>
+                                      </select>
                                 <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">身份证</label>
                                 <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
                         <div class="lz-form-row">
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">地址</label>
                                 <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">备注</label>
                                 <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
                                 <span class="lz-form-item-help"></span>
@@ -96,14 +109,18 @@
                             </div>
                         </div>
                         <div class="lz-form-row">
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">医生</label>
                                 <input class="lz-form-item-input" type="text">
                                 <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">科室</label>
-                                <input class="lz-form-item-input" type="text">
+                                <select id="me-department">
+                                        <option value="0">请选择</option>
+                                        <option value="1">全部</option>
+                                        <option value="2">挂号室</option>
+                                      </select>
                                 <span class="lz-form-item-help"></span>
                             </div>
                         </div>
@@ -115,12 +132,12 @@
                             </div>
                         </div>
                         <div class="lz-form-row">
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">挂号费</label>
                                 <input class="lz-form-item-input" type="text">
                                 <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-2 lz-form-item">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">诊金</label>
                                 <input class="lz-form-item-input" type="text">
                                 <span class="lz-form-item-help"></span>
@@ -147,6 +164,19 @@
             </div>
         </div>
     </div>
+    <script src="../../js/common/jquery/jquery-2.2.4.js"></script>
+    <script src="../../plugin/datepicker/js/dcalendar.picker.js"></script>
+    <script src="../../plugin/select/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(function() {
+            $('#me-birthday').dcalendarpicker({
+                format: 'yyyy-mm-dd'
+            })
+            $('#me-sex').niceSelect();
+            $('#me-nature').niceSelect();
+            $('#me-department').niceSelect();
+        });
+    </script>
 </body>
 
 </html>
