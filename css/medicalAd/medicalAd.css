@@ -10,6 +10,31 @@ html {
     padding: 10px;
 }
 
+.medicalAd-head-right {
+    padding: 10px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.medicalAd-head-right h2 {
+    float: left;
+}
+
+.me-head-form {
+    width: 60%;
+    float: right;
+}
+
+.me-head-form label {
+    margin-left: 10px;
+}
+
+.me-head-search button {
+    margin-left: 30px;
+    height: 30px;
+    padding: 5px 10px;
+}
+
 .medicalAd-content {
     height: 100%;
     border: 1px solid #ccc;
@@ -19,7 +44,7 @@ html {
 
 .user-mess {
     min-width: 500px;
-    flex: 5;
+    flex: 4;
     border-right: 1px solid #ccc;
     height: 100%;
     overflow: auto;
@@ -68,5 +93,117 @@ html {
     flex: 10;
     height: 100%;
     box-sizing: border-box;
-    padding: 10px 10px 0;
+    padding: 10px;
+}
+
+.me-pers-content {
+    padding: 0 10px;
+}
+
+.per-cord {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, .1);
+    border: 1px solid #ebeef5;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.per-cord-up {
+    flex: 3;
+    background: linear-gradient(130deg, #06c7d6, #26c175)!important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+}
+
+.per-up-left {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.per-img {
+    flex: 2;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.per-name {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    flex: 1;
+}
+
+.per-type {
+    text-align: center;
+    background: rgba(0, 0, 0, .17);
+    font-size: 13px;
+    flex: 1;
+    color: #fff!important;
+    border-radius: 3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+    margin: 15px;
+    padding-top: 3px;
+}
+
+.per-up-right {
+    flex: 2;
+    display: flex;
+    flex-flow: column;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+.per-up-right div {
+    padding: 7px;
+}
+
+.cord-type {
+    flex: 1;
+    line-height: 1;
+}
+
+.cord-mess {
+    flex: 1;
+}
+
+.cord-doc {
+    flex: 1;
+}
+
+.cord-date {
+    flex: 1;
+}
+
+.per-cord-down {
+    flex: 1;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-flow: row;
+}
+
+.per-down-item {
+    text-align: center;
+    font-size: 12px;
+    flex: 1;
+    padding-top: 17px;
+    color: #606266;
+}
+
+.per-down-item:hover {
+    font-size: 15px;
+    color: #2e69eb;
 }

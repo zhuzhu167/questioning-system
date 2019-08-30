@@ -23,7 +23,7 @@ html {
 
 .user-mess {
     min-width: 500px;
-    flex: 5;
+    flex: 4;
     border-right: 1px solid #ccc;
     height: 100%;
     overflow: auto;
