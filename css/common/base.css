@@ -109,7 +109,7 @@ iframe {
 .lz-main {
     border-radius: 5px;
     background-color: #fff;
-    padding: 15px 20px;
+    padding: 10px;
     margin: 0 10px 0 10px;
     height: 100%;
 }
@@ -175,6 +175,28 @@ iframe {
     background-color: #2e69eb;
     color: #fff;
     text-align: center;
+}
+
+.lz-form-clear {
+    margin: 10px 0 30px 0;
+}
+
+.lz-form-clear button {
+    height: 25px;
+    line-height: 23px;
+    background-color: #fff;
+    color: #2e60eb;
+    border: 1px solid #2e60eb;
+    padding: 0 10px;
+}
+
+.lz-form-clear button:hover {
+    color: #2e69eb;
+}
+
+.lz-form-clear button:active {
+    background-color: #2e69eb;
+    color: #fff;
 }
 
 

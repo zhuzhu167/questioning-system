@@ -7,6 +7,7 @@
     <title>药物零售</title>
     <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
     <link rel="stylesheet" type="text/css" href="../../css/retail/retail.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/switchTab/css/responsive.tabs.css">
 </head>
 <style>
 
@@ -15,11 +16,22 @@
 <body>
     <div id="retail" class="lz-main">
         <div class="retail-left">
-            <div class="lz-btn-group">
-                <button type="button" class="lz-btn lz-btn-default">西成药</button>
-                <button type="button" class="lz-btn lz-btn-default">中药</button>
+            <div id="yao-tab">
+                <ul class="tabs-list ts-list">
+                    <li class="active"><a>西成药</a></li>
+                    <li><a>中药</a></li>
+                </ul>
+                <div class="ts-content arrange-content">
+                    <div class="retail-table">
+                        <h1>西成药表格</h1>
+                    </div>
+                </div>
+                <div class="ts-content arrange-content" style="display: none">
+                    <div class="retail-table">
+                        <h1>中药表格</h1>
+                    </div>
+                </div>
             </div>
-            <div class="retail-table">表格</div>
             <div class="retail-total">
                 <div class="lz-total">合计<span>0元</span></div>
                 <div class="lz-total-btn">
@@ -39,6 +51,13 @@
             </div>
         </div>
     </div>
+    <script src="../../js/common/jquery/jquery-2.2.4.js "></script>
+    <script src="../../plugin/switchTab/js/re-tabs-simplify.js"></script>
+    <script>
+        $(function() {
+            $('#yao-tab').resTabsSimp();
+        })
+    </script>
 </body>
 
 </html>

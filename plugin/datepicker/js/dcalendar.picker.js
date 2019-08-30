@@ -1,3 +1,5 @@
+// author: liangzhu
+// 日期选择器插件
 if (typeof jQuery === 'undefined') { throw new Error('该插件需要 jQuery'); }
 
 +

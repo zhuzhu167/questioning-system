@@ -2,31 +2,39 @@ html {
     overflow: hidden;
 }
 
+#appointment {
+    height: calc(100% - 30px);
+}
 
 .appointment-content {
     margin-top: 10px;
-    height: 100%;
+    height: calc(100% - 50px);
     border: 1px solid #ccc;
     border-radius: 4px;
     display: flex;
-    overflow: auto;
+}
 
+.arrange-content {
+    margin-top: 10px;
+    height: calc(100% - 50px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .user-mess {
     min-width: 500px;
     flex: 5;
     border-right: 1px solid #ccc;
-    height: 700px;
+    height: 100%;
     overflow: auto;
     box-sizing: border-box;
     padding: 10px 20px;
-    display: inline;
 }
 
 .confirm {
     width: 100%;
     margin: auto;
+    margin-top: 30px;
 }
 
 .confirm button {

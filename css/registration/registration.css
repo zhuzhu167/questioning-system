@@ -35,13 +35,33 @@ html {
     padding-bottom: 20px;
 }
 
+.reg-main::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 6px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 6px;
+}
+
+.reg-main::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+.reg-main::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #EDEDED;
+}
+
 .reg-right {
     flex: 3;
     min-width: 250px;
     display: flex;
     flex-direction: column;
     overflow: auto;
-    min-height: 700px;
 }
 
 .reg-left-head h3 {
@@ -166,12 +186,15 @@ html {
 .reg-right-content {
     flex: 1;
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 
 .detail {
     width: 100%;
     height: 75%;
+    min-height: 150px;
     border: 1px solid #ccc;
+    overflow: auto;
 }
 
 .reg-search-form input {

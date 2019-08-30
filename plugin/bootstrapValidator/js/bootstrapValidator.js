@@ -1,4 +1,5 @@
 // author: liangzhu
+// 表单验证插件
 // 只写了不能为空的验证规则，如需加其他验证规则，自行扩展，（提示：在外面直接用extend扩展，在此处扩展直接在__RULES__加规则）
 (function(global, factory, plug) {
     return factory.call(global, global.jQuery, plug);

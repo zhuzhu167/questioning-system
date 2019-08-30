@@ -6,10 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>报表管理</title>
     <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/switchTab/css/responsive.tabs.css">
 </head>
 
 <body>
-    <div class="lz-main"></div>
+    <div id="report-tabs" class="lz-main">
+        <ul class="tabs-list ts-list">
+            <li class="active"><a>诊所运营</a></li>
+            <li><a>患者统计</a></li>
+            <li><a>收费统计</a></li>
+            <li><a>药物统计</a></li>
+        </ul>
+        <div class="ts-content arrange-content">
+            <h1>运营表格</h1>
+        </div>
+        <div class="ts-content arrange-content" style="display: none">
+            <h1>患者表格</h1>
+        </div>
+        <div class="ts-content arrange-content" style="display: none">
+            <h1>收费表格</h1>
+        </div>
+        <div class="ts-content arrange-content" style="display: none">
+            <h1>药物表格</h1>
+        </div>
+    </div>
+    <script src="../../js/common/jquery/jquery-2.2.4.js"></script>
+    <script src="../../plugin/switchTab/js/re-tabs-simplify.js"></script>
+    <script>
+        $(function() {
+            $('#report-tabs').resTabsSimp();
+        })
+    </script>
 </body>
 
 </html>
