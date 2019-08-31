@@ -45,6 +45,13 @@ iframe {
     background: #EDEDED;
 }
 
+.lz-left {
+    float: left;
+}
+
+.lz-right {
+    float: right;
+}
 
 /* 按钮 */
 

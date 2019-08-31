@@ -1,0 +1,52 @@
+.select-more-input {
+    position: relative;
+}
+
+.select-more-box {
+    position: absolute;
+    height: auto;
+    width: 90%;
+    margin-top: 10px;
+    left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 12px 0px;
+    margin: 5px 0px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    z-index: 100;
+}
+
+.sm-head {
+    flex: 1;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    color: #2e69eb;
+}
+
+.sm-head .select-cancel {
+    font-size: 20px;
+    float: right;
+    display: inline-block;
+}
+.sm-head h2 {
+    display: inline-block;
+}
+
+.sm-content {
+    flex: 8;
+    display: flex;
+    flex-flow: column;
+    padding: 10px 0;
+}
+
+.sm-con-item {
+    padding: 5px 0;
+}
+
+.sm-foot {
+    padding-top: 5px;
+    border-top: 1px solid #ccc;
+    flex: 1;
+}

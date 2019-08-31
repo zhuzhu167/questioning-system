@@ -18,10 +18,15 @@ html {
 
 .medicalAd-head-right h2 {
     float: left;
+    margin-bottom: 20px;
+}
+
+.to-date .calendar-area {
+    left: 40px;
 }
 
 .me-head-form {
-    width: 60%;
+    width: 600px;
     float: right;
 }
 
@@ -89,11 +94,11 @@ html {
 }
 
 .medicalAd-history {
-    min-width: 1000px;
     flex: 10;
     height: 100%;
     box-sizing: border-box;
     padding: 10px;
+    overflow: auto;
 }
 
 .me-pers-content {
@@ -111,6 +116,10 @@ html {
     float: left;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.per-cord:hover{
+    box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1);
 }
 
 .per-cord-up {

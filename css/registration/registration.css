@@ -131,15 +131,18 @@ html {
         display: flex;
         flex-direction: column;
     }
+
     .pc-form {
         flex: 1;
         padding-right: 20px;
         border: 0;
     }
+
     .pc-page {
         border-top: 1px solid #ccc;
         flex: 1;
     }
+
     .pc-page-content h2 {
         padding-top: 20px;
     }
@@ -204,3 +207,4 @@ html {
 .reg-search-form .calendar-area {
     left: 42px;
 }
+
