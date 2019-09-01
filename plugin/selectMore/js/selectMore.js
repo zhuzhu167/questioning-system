@@ -1,55 +1,99 @@
+// author:liangzhu
+// 这个只是模板，需要使用者之间根据业务修改次插件
 ;
 (function ($) {
-    $.fn.selectMore = function (date, config) {
-        var _date = date
+    $.fn.selectMore = function (config) {
         var that = $(this);
         var _setting = {
-            width: '100%',
-            row: 0,
-        }
-
+            width: 0, // 设置下拉框宽度
+            headName: '', //设置头部名称
+            data: [], // 数据
+            head: true,
+            footer: true
+        };
+        that.parent()
+            .css('position', 'relative');
+        // 导入配置
         if (config) {
-            _setting = config;
-        }
-
-        var _div = ' <div class="select-more-box"><div class="sm-head"><h2>主述</h2><i class="fa fa-times select-cancel" aria-hidden="true"></i></div><div class="sm-content"></div><div class="sm-foot"><div><div><span>内容</span></div><div></div></div></div></div>'
-        var creat = function (date) {
-                if (date) {
-                    var content = '<div class="sm-con-item">12213123</div><div class="sm-con-item">shbuafg</div>'
+            $.each(config, function (key, val) {
+                if (_setting[key] != undefined) {
+                    _setting[key] = val;
                 }
+            })
+        }
+        var _div = ' <div class="select-more-box"><div class="sm-head"><h2>' + _setting.headName + '</h2><i class="fa fa-times select-cancel" aria-hidden="true"></i></div><div class="sm-content"></div><div class="sm-foot"><div>内容：</div><div><input class="lz-form-item-input" type="text" autocomplete="off"></div><div><button type="button" class="lz-btn lz-btn-primary">+ 新增</button></div></div>';
+        // 类方法-分模块进行
+        var creat = function (data) {
+                if (data == null || data == undefined) {
+                    return push();
+                }
+                var content = '';
+
+                $.each(data, function (key, val) {
+                    var head = '<div class="sm-con-item-head">' + key + '：</div>';
+                    var item = '';
+                    for (var j = 0; j < val.length; j++) {
+                        item += '<span class="sm-ct-list-btn lz-btn">' + val[j] + '</span>'
+                    }
+                    content += '<div class="sm-con-item">' + head + '<div class="sm-con-item-list">' + item + '</div>' + '</div>'
+                })
                 push(content);
             },
             push = function (content) {
+                var parentWid = that.parent().width();
+                var inputWid = that.width();
+                var domLeft = parentWid - inputWid - 32;
+                console.log(parentWid,inputWid);
                 that.after(_div);
-                var inputWidth = that.css('width');
-                console.log(inputWidth)
                 that.siblings('div.select-more-box')
-                    .css('width',inputWidth)
+                    .css({
+                        'width': _setting.width != 0 ? _setting.width : 'calc(100% - 70px)',
+                        'left': domLeft
+                    })
+                    .hide();
                 that.siblings('div.select-more-box')
                     .find('.sm-content')
-                    .append(content)
-                showBox(0);
+                    .append(content);
+                if (!_setting.head) {
+                    that.siblings('div.select-more-box')
+                        .find('.sm-con-item-head')
+                        .css('display', 'none');
+                }
+                if (!_setting.footer) {
+                    that.siblings('div.select-more-box')
+                        .find('.sm-foot')
+                        .css('display', 'none');
+                }
             },
-            showBox = function (flag) {
-                if (flag != 1 && that.siblings('div.select-more-box').css('display') == 'flex') {
+            hideBox = function () {
+                if (that.siblings('div.select-more-box').css('display') == 'flex') {
                     that.siblings('div.select-more-box')
                         .css('display', 'none');
-                } else if (flag == 1 && that.siblings('div.select-more-box').css('display') == 'none') {
-                    that.siblings('div.select-more-box')
-                        .css('display', 'flex');
                 }
-
-            };
-        creat(_date);
+            },
+            showThisBox = function () {
+                that.siblings('div.select-more-box').show();
+            }
+        creat(_setting.data);
+        // 绑定事件
         that.on('focus', function () {
-            showBox(1);
-        })
-
+            showThisBox();
+        });
         that.siblings('div.select-more-box')
             .find('.select-cancel')
             .on('click', function () {
-                console.log(1)
-                showBox(0);
-            })
+                hideBox();
+            });
+        that.siblings('div.select-more-box')
+            .find('.sm-ct-list-btn')
+            .on('click', function () {
+                that.val(that.val() + $(this).text());
+            });
+        $(document).on("click", function (e) {
+            var target = $(e.target);
+            if (target.closest(that.parent()).length == 0) {
+                that.siblings('div.select-more-box').hide();
+            }
+        })
     }
 })(jQuery)

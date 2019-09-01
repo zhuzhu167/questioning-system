@@ -16,6 +16,8 @@
     flex-flow: column;
     padding: 20px;
     z-index: 100;
+    box-sizing: border-box;
+    margin-top: 10px;
 }
 
 .sm-head {
@@ -30,6 +32,11 @@
     float: right;
     display: inline-block;
 }
+
+.select-cancel {
+    color: #000;
+}
+
 .sm-head h2 {
     display: inline-block;
 }
@@ -41,12 +48,46 @@
     padding: 10px 0;
 }
 
-.sm-con-item {
-    padding: 5px 0;
+.sm-con-item-head {
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px;
 }
 
+.sm-con-item-list {
+    display: inline-block;
+}
+
+.sm-con-item-list span {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 1px solid #fff;
+}
+
+.sm-con-item-list span:hover {
+    border: 1px solid #2e69eb;
+    color: #2e69eb;
+}
+
+.sm-con-item {}
+
 .sm-foot {
-    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
     border-top: 1px solid #ccc;
     flex: 1;
+}
+.sm-foot div{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sm-foot button{
+    padding: 7px 10px;
+}
+
+.sm-foot input{
+    width: 100%;
 }

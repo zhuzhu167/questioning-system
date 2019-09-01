@@ -70,8 +70,7 @@
                     <div class="lz-form-row ">
                         <div class="lz-col-1 lz-form-item">
                             <label class="lz-form-item-label ">主述:</label>
-                            <input class="lz-form-item-input select-more-input re-select-more" type="text"
-                                autocomplete="off">
+                            <input class="lz-form-item-input zhushu" type="text" autocomplete="off">
                             <span class="lz-form-item-help"></span>
                         </div>
 
@@ -93,7 +92,7 @@
                     <div class="lz-form-row">
                         <div class="lz-col-1 lz-form-item">
                             <label class="lz-form-item-label ">诊断:</label>
-                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <input class="lz-form-item-input zhenduan" type="text" autocomplete="off">
                             <span class="lz-form-item-help"></span>
                         </div>
                     </div>
@@ -135,19 +134,21 @@
                                             </div>
                                             <div class="lz-col-2 lz-form-item">
                                                 <label class="lz-form-item-label ">用法:</label>
-                                                <input class="lz-form-item-input " type="text" autocomplete="off">
+                                                <input class="lz-form-item-input select-more-input yongfa" type="text"
+                                                    autocomplete="off">
                                                 <span class="lz-form-item-help"></span>
                                             </div>
                                         </div>
                                         <div class="lz-form-row ">
                                             <div class="lz-col-1 lz-form-item">
                                                 <label class="lz-form-item-label ">天数:</label>
-                                                <input class="lz-form-item-input " type="text" autocomplete="off">
+                                                <input class="lz-form-item-input tianshu" type="text"
+                                                    autocomplete="off">
                                                 <span class="lz-form-item-help"></span>
                                             </div>
                                             <div class="lz-col-2 lz-form-item">
                                                 <label class="lz-form-item-label ">频次:</label>
-                                                <input class="lz-form-item-input " type="text" autocomplete="off">
+                                                <input class="lz-form-item-input pinci" type="text" autocomplete="off">
                                                 <span class="lz-form-item-help"></span>
                                             </div>
                                         </div>
@@ -195,7 +196,7 @@
                                 <div class="pc-page">
                                     <div class="pc-page-content">
                                         <div class="page-head">
-                                            <h2>Rx</h2>
+                                            <h2>Rp.</h2>
                                         </div>
                                         <div class="page-text"></div>
                                     </div>
@@ -222,7 +223,8 @@
                                         <div class="lz-form-row ">
                                             <div class="lz-col-2 lz-form-item">
                                                 <label class="lz-form-item-label ">脚注:</label>
-                                                <input class="lz-form-item-input " type="text" autocomplete="off">
+                                                <input class="lz-form-item-input jiaozhu" type="text"
+                                                    autocomplete="off">
                                                 <span class="lz-form-item-help"></span>
                                             </div>
                                             <div class="lz-col-1 lz-form-item">
@@ -239,7 +241,7 @@
                                 <div class="pc-page">
                                     <div class="pc-page-content">
                                         <div class="page-head">
-                                            <h2>Rx</h2>
+                                            <h2>Rp.</h2>
                                         </div>
                                         <div class="page-text"></div>
                                     </div>
@@ -326,7 +328,7 @@
                                 <div class="pc-page">
                                     <div class="pc-page-content">
                                         <div class="page-head">
-                                            <h2>Rx</h2>
+                                            <h2>Rp.</h2>
                                         </div>
                                         <div class="page-text"></div>
                                     </div>
@@ -376,8 +378,62 @@
             })
             $('.re-select').niceSelect();
             $('#prescription').respTabs();
-            $('.re-select-more').selectMore({
-                'LZ': 123
+            $('.zhushu').selectMore({
+                headName: '主述',
+                data: {
+                    '常见症状': ['发热', '头疼', '头晕', '流涕', '声嘶', '咽疼', '咽轻红', '咽充血', '咳嗽', '咳痰', '呼吸困难', '腹疼',
+                        '发热', '头疼', '头晕', '流涕', '声嘶', '咽疼', '咽轻红', '咽充血', '咳嗽', '咳痰', '呼吸困难', '腹疼'
+                    ],
+                    '常见时间': ['早晨', '中午', '晚上', '年', '月', '周', '天', '小时', '分钟', '0', '1', '2', '3', '4',
+                        '5', '6', '7', '8', '9'
+                    ],
+                    '常用标识': ['.', '，', '。', '℃'],
+                    '常用词': ['持续时间', '加重', '过敏']
+                }
+            });
+            $('.zhenduan').selectMore({
+                headName: '诊断',
+                data: {
+                    '疾病': ['急性支气管炎', '慢性阻塞性肺疾病', '上呼吸道感染', '咽异物', '急性外耳道炎', '慢性外耳道炎', '月经不调', '咽充血',
+                        '咳嗽', '咳痰', '呼吸困难', '腹疼',
+                        '发热', '头疼', '头晕', '流涕', '声嘶', '咽疼', '咽轻红', '咽充血', '咳嗽', '咳痰', '呼吸困难', '腹疼'
+                    ]
+                }
+            });
+            $('.yongfa').selectMore({
+                headName: '用法',
+                head: false,
+                footer: false,
+                data: {
+                    '用法': ['饭前', '饭后', '睡前', '必要时', '肌肉注射', '静脉注射', '口服', '嚼服',
+                        '吞服', '冲服', '含服'
+                    ]
+                }
+            });
+            $('.pinci').selectMore({
+                headName: '频次',
+                head: false,
+                footer: false,
+                data: {
+                    '频次': ['每日一次', '每日两次', '每日三次', '每日四次', '隔日一次', '每周一次']
+                }
+            });
+            $('.tianshu').selectMore({
+                headName: '天数',
+                width: 450,
+                head: false,
+                footer: false,
+                data: {
+                    '天数': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+                }
+            });
+            $('.jiaozhu').selectMore({
+                headName: '脚注',
+                head: false,
+                footer: false,
+                data: {
+                    '脚注': ['先煎', '后下', '另煎', '冲服', '打碎', '泡服']
+                }
             });
         });
     </script>
