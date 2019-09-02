@@ -4,9 +4,11 @@
 (function($) {
     $.fn.resTabsSimp = function(options) {
         var self = $(this);
-        var tabList = self.find('.ts-list');
+        var tabList = self.children('.ts-list');
         var tabListItem = tabList.find('li');
-        var tabContent = self.children('.ts-content')
+        var tabContent = self.children('.ts-container').children('.ts-content')
+        tabContent.hide();
+        tabContent.first().css('display', '');
         var toggleTab = function() {
             var index = $(tabListItem).index($(this));
             $(tabContent).each(function() {

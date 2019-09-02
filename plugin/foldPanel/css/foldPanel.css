@@ -1,0 +1,31 @@
+.subNavBox {
+    width: 100%;
+}
+
+.subNav {
+    cursor: pointer;
+    font-size: 16px;
+    color: #35393c;
+    line-height: 28px;
+    padding: 3px 10px;
+    background-position: 95% 50%
+}
+
+.subNav i {
+    margin-right: 10px;
+}
+
+.subNav:hover {
+    color: #2e69eb;
+}
+
+.currentDd {
+    color: #2e69eb;
+}
+
+.currentDt {}
+
+.navContent {
+    display: none;
+    padding: 10px
+}

@@ -53,6 +53,7 @@ iframe {
     float: right;
 }
 
+
 /* 按钮 */
 
 .lz-btn-group {
@@ -257,4 +258,25 @@ iframe {
 
 .lz-RadioStyle input:disabled+label {
     opacity: 0.7;
+}
+
+
+/* 垂直居中 */
+
+.lz-center-vertically {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 暂无数据提示 */
+
+.lz-no-mess {
+    margin: auto;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.lz-lr-layout {
+    display: flex;
 }

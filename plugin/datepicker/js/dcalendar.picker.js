@@ -13,9 +13,8 @@ function($) {
 
         DCalendar = function(elem, options) {
             this.calendar = $(elem);
-            this.today = new Date(); //system date
+            this.today = new Date();
 
-            //current selected date, default is today if no value given
             if (this.calendar.prev().val() === '') {
                 this.date = new Date();
             } else {
@@ -53,17 +52,9 @@ function($) {
                         cyear = that.date.getFullYear(),
                         min = that.minDate === "today" ? new Date(that.today.getFullYear(), that.today.getMonth(), that.today.getDate()) : new Date(that.minDate),
                         max = that.maxDate === "today" ? new Date(that.today.getFullYear(), that.today.getMonth(), that.today.getDate()) : new Date(that.maxDate);
-
-                    /* Calculate year */
                     if (isPrev) { cyear = (cmonth === 0 ? cyear - 1 : cyear); } else if (isNext) { cyear = (cmonth + 2 === 13 ? cyear + 1 : cyear); }
-                    /* Calculate month */
                     if (isPrev) { cmonth = (cmonth === 0 ? '12' : cmonth); } else if (isNext) { cmonth = (cmonth + 2 === 13 ? '1' : cmonth + 2); } else { cmonth = cmonth + 1; }
-
-                    // Selected date
                     var selected = new Date(cyear, cmonth - 1, sdate);
-
-                    // console.log(cmonth);
-                    // console.log(selected);
                     if ((that.minDate && selected < min) || (that.maxDate && selected > max)) return;
 
                     that.selected = cmonth + '/' + sdate + '/' + cyear;
@@ -211,9 +202,7 @@ function($) {
                             break;
                         }
                     }
-                    /* For days of previous and next month */
                     if (i === 1 || i > 4) {
-                        // First week
                         if (i === 1) {
                             var p = new Date(that.date.getFullYear(), that.date.getMonth() - 1, 1),
                                 pMonth = p.getMonth(),
@@ -280,7 +269,6 @@ function($) {
         }
     }
 
-    /* DEFINITION FOR DCALENDAR */
     $.fn.dcalendar = function(opts) {
         return $(this).each(function(index, elem) {
             var that = this;
@@ -301,7 +289,6 @@ function($) {
 
     $.fn.dcalendar.Constructor = DCalendar;
 
-    /* DEFINITION FOR DCALENDAR PICKER */
     $.fn.dcalendarpicker = function(opts) {
         return $(this).each(function() {
             var that = $(this),

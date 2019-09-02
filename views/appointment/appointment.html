@@ -21,172 +21,174 @@
             <li class="active"><a>预约管理</a></li>
             <li><a>排班管理</a></li>
         </ul>
-        <div class="ts-content appointment-content">
-            <div class="user-mess">
-                <div>
-                    <form id="base-mess" class="lz-form">
-                        <div>
-                            <div class="lz-form-head">
-                                基本信息
+        <div class="ts-container">
+            <div class="ts-content appointment-content">
+                <div class="user-mess">
+                    <div>
+                        <form id="base-mess" class="lz-form">
+                            <div>
+                                <div class="lz-form-head">
+                                    基本信息
+                                </div>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">姓名:</label>
-                                <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
-                                <span class="lz-form-item-help"></span>
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">姓名:</label>
+                                    <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">年龄:</label>
+                                    <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">年龄:</label>
-                                <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
-                                <span class="lz-form-item-help"></span>
-                            </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item" style="float: right;">
-                                <label class="lz-form-item-label">出生日期:</label>
-                                <input class="lz-form-item-input appiontment-date" autocomplete="off" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
-                                <span class="lz-form-item-help"></span>
-                            </div>
-                            <div class="lz-col-1 lz-form-item" style="float: left;">
-                                <label class="lz-form-item-label">性别:</label>
-                                <!-- <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项"> -->
-                                <select class="ap-select">
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item" style="float: right;">
+                                    <label class="lz-form-item-label">出生日期:</label>
+                                    <input class="lz-form-item-input appiontment-date" autocomplete="off" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-1 lz-form-item" style="float: left;">
+                                    <label class="lz-form-item-label">性别:</label>
+                                    <!-- <input class="lz-form-item-input" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项"> -->
+                                    <select class="ap-select">
                                     <option value="0">请选择</option>
                                     <option value="1">男</option>
                                     <option value="2">女</option>
                                 </select>
-                                <span class="lz-form-item-help"></span>
-                            </div>
+                                    <span class="lz-form-item-help"></span>
+                                </div>
 
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">卡号:</label>
-                                <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
-                                <span class="lz-form-item-help"></span>
                             </div>
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">手机号:</label>
-                                <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
-                                <span class="lz-form-item-help"></span>
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">卡号:</label>
+                                    <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">手机号:</label>
+                                    <input class="lz-form-item-input" type="text" autocomplete="off" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                    <form class="lz-form">
-                        <div>
-                            <div class="lz-form-head">
-                                预约信息
+                        </form>
+                        <form class="lz-form">
+                            <div>
+                                <div class="lz-form-head">
+                                    预约信息
+                                </div>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item" style="float: left;">
-                                <label class="lz-form-item-label">类型:</label>
-                                <select class="ap-select">
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item" style="float: left;">
+                                    <label class="lz-form-item-label">类型:</label>
+                                    <select class="ap-select">
                                     <option value="0">请选择</option>
                                     <option value="1">初诊</option>
                                     <option value="2">复诊</option>
                                 </select>
-                                <span class="lz-form-item-help"></span>
-                            </div>
-                            <div class="lz-col-1 lz-form-item" style="float: right;">
-                                <label class="lz-form-item-label">来源:</label>
-                                <select class="ap-select">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-1 lz-form-item" style="float: right;">
+                                    <label class="lz-form-item-label">来源:</label>
+                                    <select class="ap-select">
                                     <option value="0">请选择</option>
                                     <option value="1">网络咨询</option>
                                     <option value="2">朋友介绍</option>
                                     <option value="3">家住附近</option>
                                     <option value="4">诊所网站</option>
                                 </select>
-                                <span class="lz-form-item-help"></span>
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">医生:</label>
-                                <input class="lz-form-item-input" autocomplete="off" type="text">
-                                <span class="lz-form-item-help"></span>
-                            </div>
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">科室:</label>
-                                <select class="ap-select">
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">医生:</label>
+                                    <input class="lz-form-item-input" autocomplete="off" type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">科室:</label>
+                                    <select class="ap-select">
                                     <option value="0">请选择</option>
                                     <option value="1">全部</option>
                                     <option value="2">挂号室</option>
                                 </select>
-                                <span class="lz-form-item-help"></span>
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">日期:</label>
-                                <input class="lz-form-item-input appiontment-date" autocomplete="off" type="text">
-                                <span class="lz-form-item-help"></span>
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">日期:</label>
+                                    <input class="lz-form-item-input appiontment-date" autocomplete="off" type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">时间:</label>
+                                    <input class="lz-form-item-input" autocomplete="off" type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">时间:</label>
-                                <input class="lz-form-item-input" autocomplete="off" type="text">
-                                <span class="lz-form-item-help"></span>
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">预约事项:</label>
+                                    <input class="lz-form-item-input" autocomplete="off" type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">预约事项:</label>
-                                <input class="lz-form-item-input" autocomplete="off" type="text">
-                                <span class="lz-form-item-help"></span>
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">备注:</label>
+                                    <input class="lz-form-item-input" autocomplete="off" type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">备注:</label>
-                                <input class="lz-form-item-input" autocomplete="off" type="text">
-                                <span class="lz-form-item-help"></span>
+                        </form>
+                        <form class="lz-form">
+                            <div>
+                                <div class="lz-form-head">
+                                    其他信息
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                    <form class="lz-form">
-                        <div>
-                            <div class="lz-form-head">
-                                其他信息
+                            <div class="lz-form-row">
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">联系人:</label>
+                                    <input class="lz-form-item-input" autocomplete="off" type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
+                                <div class="lz-col-1 lz-form-item">
+                                    <label class="lz-form-item-label">联系电话:</label>
+                                    <input class="lz-form-item-input" autocomplete="off" type="text">
+                                    <span class="lz-form-item-help"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">联系人:</label>
-                                <input class="lz-form-item-input" autocomplete="off" type="text">
-                                <span class="lz-form-item-help"></span>
+                            <div class="confirm">
+                                <button type="button" class="lz-btn lz-btn-primary">确定预约</button>
                             </div>
-                            <div class="lz-col-1 lz-form-item">
-                                <label class="lz-form-item-label">联系电话:</label>
-                                <input class="lz-form-item-input" autocomplete="off" type="text">
-                                <span class="lz-form-item-help"></span>
-                            </div>
-                        </div>
-                        <div class="confirm">
-                            <button type="button" class="lz-btn lz-btn-primary">确定预约</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="appointment-history">
-                <div id="date-tab" class="tabs">
-                    <ul class="tabs-list">
-                        <li class="active"><a href="javascript:;">日历</a></li>
-                        <li><a href="javascript:;">列表</a></li>
-                    </ul>
-                    <div class="tabs-container">
-                        <div class="tab-content" style="display:block;">
-                            <h1>日历表格</h1>
-                        </div>
-                        <div class="tab-content">
-                            <h1>列表表格</h1>
+                <div class="appointment-history">
+                    <div id="date-tab" class="tabs">
+                        <ul class="tabs-list">
+                            <li class="active"><a href="javascript:;">日历</a></li>
+                            <li><a href="javascript:;">列表</a></li>
+                        </ul>
+                        <div class="tabs-container">
+                            <div class="tab-content" style="display:block;">
+                                <h1>日历表格</h1>
+                            </div>
+                            <div class="tab-content">
+                                <h1>列表表格</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="ts-content arrange-content" style="display: none">
-            <h1>排班表格</h1>
+            <div class="ts-content arrange-content" style="display: none">
+                <h1>排班表格</h1>
+            </div>
         </div>
     </div>
 

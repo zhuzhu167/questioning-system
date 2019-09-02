@@ -60,9 +60,10 @@
 }
 
 .sm-con-item-list span {
-    padding: 5px 10px;
-    margin-right: 10px;
+    padding: 5px 7px;
+    margin-right: 5px;
     border: 1px solid #fff;
+    color: #000;
 }
 
 .sm-con-item-list span:hover {
@@ -79,15 +80,17 @@
     border-top: 1px solid #ccc;
     flex: 1;
 }
-.sm-foot div{
+
+.sm-foot div {
     display: inline-block;
     margin-right: 10px;
+    font-size: 14px;
 }
 
-.sm-foot button{
+.sm-foot button {
     padding: 7px 10px;
 }
 
-.sm-foot input{
+.sm-foot input {
     width: 100%;
 }

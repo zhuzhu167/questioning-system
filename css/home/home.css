@@ -6,25 +6,34 @@ body {
     background: #f1f1f1;
 }
 
-.home-panel {
-    margin: 20px 0;
+#home {
+    overflow: auto;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1500px) {
+    .home-panel {
+        margin-top: 20px;
+        display: flex;
+    }
     .card-panel {
         width: 22.5%;
+        margin: 0 20px;
     }
 }
 
-@media only screen and (max-width: 1300px) {
-    .card-panel {
-        width: 47%;
+@media only screen and (max-width: 1500px) {
+    .home-panel {
         margin-top: 20px;
+    }
+    .card-panel {
+        margin: 10px;
+        width: 48%;
+        display: inline-block;
     }
 }
 
 .card-panel {
-    margin-left: 2%;
+    flex: 1;
     display: inline-block;
     height: 150px;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
@@ -44,4 +53,18 @@ body {
     display: block;
     text-align: center;
     font-size: 30px;
+}
+
+.statistic-box {
+    padding: 0 20px;
+}
+
+.statistic-one {
+    margin: 20px 0;
+    display: inline-block;
+    height: 400px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    background-color: #F2F6FC;
+    width: 100%;
 }
