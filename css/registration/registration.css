@@ -25,14 +25,14 @@ html {
     padding: 0 15px;
     border-right: 1px solid #ccc;
     min-width: 200px;
-    overflow-y: auto;
     padding-bottom: 30px;
 }
 
 .panel-content {
     width: 100%;
     height: 200px;
-    border: 1px solid #ccc;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .reg-main {
@@ -211,4 +211,77 @@ html {
 
 .reg-search-form .calendar-area {
     left: 42px;
+}
+
+.pc-ul {}
+
+.pc-li {
+    width: 100%;
+    height: 50px;
+}
+
+.pcl-item {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    border-left: 5px solid rgba(0, 0, 0, 0);
+}
+
+.pcl-item:hover {
+    border-left: 5px solid #2e69eb;
+    background-color: #f6f6f6;
+}
+
+.pcli-img {
+    flex: 1;
+    font-size: 25px;
+    color: #535353;
+    margin-left: 10px;
+}
+
+.pcli-mess {
+    flex: 3;
+    display: flex;
+    overflow: hidden;
+    flex-flow: column;
+    height: 50px;
+}
+
+.pcli-name {
+    height: 25px;
+    line-height: 25px;
+}
+
+.pcli-doc {
+    height: 25px;
+    line-height: 25px;
+}
+
+.pcli-date {
+    flex: 2;
+}
+
+.prescrption-head {
+    margin: 0 10px;
+}
+
+.prescrption-add {
+    flex: 0.4;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.prescrption-add:hover {
+    color: #2e69eb;
+}
+
+.model-text {
+    margin-left: 10px;
+    flex: 3;
+}
+
+.model-text-add {
+    flex: 1;
+    font-size: 20px;
+    padding-left: 40px;
 }
