@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+</head>
+<style>
+    .login-main {
+        width: 100%;
+        height: 100%;
+        background: url('../../static/img/login.png') no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .login-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 900px;
+        height: 500px;
+        background: #fff;
+        box-shadow: 0 20px 80px 0 rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        display: flex
+    }
+
+    .login-img {
+        flex: 1;
+
+    }
+
+    .login-form {
+        flex: 1;
+        padding: 170px 100px;
+    }
+    .login-btn button{
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="login-main">
+        <div class="login-box">
+            <div class="login-img"></div>
+            <div class="login-form">
+                <form class="lz-form">
+                    <div class="lz-form-row ">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label ">账号</label>
+                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+
+                    <div class="lz-form-row ">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label">密码</label>
+                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                    <div class="lz-form-row login-btn">
+                        <button type="button" class="lz-btn lz-btn-primary">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script></script>
+</body>
+
+</html>

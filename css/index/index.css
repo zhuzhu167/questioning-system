@@ -108,6 +108,9 @@
     padding: 10px;
     cursor: pointer;
 }
+.setting span:hover{
+    color: #2e69eb;
+}
 
 .browsing-history {
     height: 30px;

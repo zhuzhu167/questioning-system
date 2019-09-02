@@ -194,7 +194,7 @@ html {
 .reg-right-content {
     flex: 1;
     padding: 0 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .detail {
@@ -237,6 +237,8 @@ html {
     font-size: 25px;
     color: #535353;
     margin-left: 10px;
+    color: #2e69eb;
+    
 }
 
 .pcli-mess {
@@ -250,6 +252,7 @@ html {
 .pcli-name {
     height: 25px;
     line-height: 25px;
+    
 }
 
 .pcli-doc {
@@ -268,20 +271,30 @@ html {
 .prescrption-add {
     flex: 0.4;
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
+    transform: rotateY(180deg);
+    color: #2e69eb;
+    float: right;
 }
 
-.prescrption-add:hover {
-    color: #2e69eb;
+.prescrption-add :hover{
+    font-size: 22px;
 }
 
 .model-text {
     margin-left: 10px;
     flex: 3;
+    overflow: hidden;
 }
 
 .model-text-add {
     flex: 1;
     font-size: 20px;
-    padding-left: 40px;
+    transform: rotateY(180deg);
+    color: #2e69eb;
+    padding-left: 10px;
+}
+
+.model-text-add :hover{
+    font-size: 22px;
 }

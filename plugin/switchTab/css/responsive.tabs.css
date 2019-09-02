@@ -61,6 +61,8 @@
 .tabs-list-portrait .active {
     border-left: 5px solid #2e69eb;
     color: #2e69eb;
+    font-weight: 700;
+    background-color: #fff;
 }
 
 
