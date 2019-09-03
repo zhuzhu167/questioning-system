@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/register/register.css">
+</head>
+<style>
+    .register-main {
+        width: 100%;
+        height: 100%;
+        background: url('../../static/img/login.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .register-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 800px;
+        height: 600px;
+        background: #fff;
+        box-shadow: 0 20px 80px 0 rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+    }
+    
+    .register-head {
+        flex: 2;
+        text-align: center;
+        padding-top: 80px;
+        font-size: 20px;
+    }
+    
+    .register-head h1 {
+        color: #2e69eb;
+    }
+    
+    .register-form {
+        flex: 6;
+        padding: 0 200px;
+    }
+    
+    .register-btn button {
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .register-foot {
+        flex: 1;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .register-foot a {
+        color: #2e69eb;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="register-main">
+        <div class="register-box">
+            <div class="register-head">
+                <h1>Hello， 请注册</h1>
+            </div>
+            <div class="register-form">
+                <form class="lz-form">
+                    <div class="lz-form-row">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label ">手机号</label>
+                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                    <div class="lz-form-row">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label">验证码</label>
+                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                    <div class="lz-form-row">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label">密码</label>
+                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                    <div class="lz-form-row">
+                        <div class="lz-col-1 lz-form-item">
+                            <label class="lz-form-item-label">确认密码</label>
+                            <input class="lz-form-item-input " type="text" autocomplete="off">
+                            <span class="lz-form-item-help"></span>
+                        </div>
+                    </div>
+                    <div class="lz-form-row register-btn">
+                        <button type="button" class="lz-btn lz-btn-primary">注册</button>
+                    </div>
+                </form>
+            </div>
+            <div class="register-foot">
+                <span>已存在账号，</span><a onclick="toLogin()">请登录</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toLogin() {
+            location.href = '../login/login.html'
+        }
+    </script>
+</body>
+
+</html>

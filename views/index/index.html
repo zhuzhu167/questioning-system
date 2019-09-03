@@ -52,8 +52,8 @@
             <div class="head">
                 <div class="name">网站名称</div>
                 <div class="setting">
-                    <span>登录</span>
-                    <span>注册</span>
+                    <span onclick="toLogin()">登录</span>
+                    <span onclick="toRegister()">注册</span>
                 </div>
             </div>
             <div class="browsing-history">
@@ -78,6 +78,14 @@
             var str = '<iframe src=" ' + url[id] + ' "></iframe>'
             $(".main-content ").empty();
             $(".main-content ").append(str);
+        }
+
+        function toLogin() {
+            location.href = '../login/login.html'
+        }
+
+        function toRegister() {
+            location.href = '../register/register.html'
         }
     </script>
 </body>
