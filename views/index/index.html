@@ -69,19 +69,11 @@
         </div>
     </div>
     <script src="../../js/common/jquery/jquery-2.2.4.js "></script>
+    <script src="index.js"></script>
     <script>
-        // var home = "../home/home.html ";
-        // var appointment = "../appointment/appointment.html ";
-        // var medicalAd = "../medicalAd/medicalAd.html ";
-        // var registration = "../registration/registration.html ";
-        // var report = "../report/report.html ";
-        // var retail = "../retail/retail.html ";
-        // var set = "../set/set.html ";
-        var url = ["../home/home.html ", "../appointment/appointment.html ", "../medicalAd/medicalAd.html ",
-            "../registration/registration.html ", "../retail/retail.html ", "../report/report.html ",
-            "../set/set.html ", "../charge/charge.html", "../medicine/medicine.html"
-        ]
-
+        // 视图模型
+        // 视图层和数据层代码最好分开，便于维护，利用数据模型驱动视图模型
+        // 不要每个函数写一大段，功能单元化，利用面向对象的思想写 function(){}
         function toUrl(id) {
             var str = '<iframe src=" ' + url[id] + ' "></iframe>'
             $(".main-content ").empty();
