@@ -14,6 +14,7 @@ html {
     padding: 10px;
     height: 80px;
     margin-bottom: 10px;
+    min-width: 795px;
 }
 
 .medicalAd-head-right h2 {
@@ -25,9 +26,17 @@ html {
     left: 40px;
 }
 
-.me-head-form {
-    width: 600px;
-    float: right;
+@media only screen and (min-width: 1700px) {
+    .me-head-form {
+        width: 60%;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .me-head-form {
+        width: 700px;
+    }
 }
 
 .me-head-form label {
@@ -118,7 +127,7 @@ html {
     margin-bottom: 20px;
 }
 
-.per-cord:hover{
+.per-cord:hover {
     box-shadow: 5px 10px 15px 0 rgba(0, 0, 0, .1);
 }
 

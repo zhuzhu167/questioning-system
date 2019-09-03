@@ -7,9 +7,9 @@
     <title>挂号</title>
     <link rel="stylesheet" type="text/css" href="../../css/common/base.css">
     <link rel="stylesheet" type="text/css" href="../../css/medicalAd/medicalAd.css">
-    <link rel="stylesheet" type="text/css" href="../../plugin/datepicker/css/dcalendar.picker.css">
     <link rel="stylesheet" type="text/css" href="../../plugin/select/css/nice-select.css">
     <link rel="stylesheet" type="text/css" href="../../plugin/switchTab/css/responsive.tabs.css">
+    <link rel="stylesheet" type="text/css" href="../../plugin/datepockerRange/css/datepicker.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <style>
@@ -45,8 +45,10 @@
                         <div class="lz-form-row">
                             <div class="lz-col-1 lz-form-item" style="float: right;">
                                 <label class="lz-form-item-label">出生日期:</label>
-                                <input class="lz-form-item-input medicalAd-date" autocomplete="off" type="text" data-bv="true" data-bv-require="true" data-bv-require-error="*必填项">
-                                <span class="lz-form-item-help"></span>
+                                <div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day mt10">
+                                    <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                                    <input type="text" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input only-date" value="">
+                                </div>
                             </div>
                             <div class="lz-col-1 lz-form-item" style="float: left;">
                                 <label class="lz-form-item-label">性别:</label>
@@ -159,6 +161,15 @@
                     <h2>挂号列表</h2>
                     <form class="lz-form me-head-form">
                         <div class="lz-form-row">
+                            <div class="lz-col-1 lz-form-item" style="flex: 2;">
+                                <label class="lz-form-item-label">挂号时间:</label>
+                                <div class="c-datepicker-date-editor  J-datepicker-range-day mt10">
+                                    <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                                    <input placeholder="开始日期" name="" class="c-datepicker-data-input two-date" value="">
+                                    <span class="c-datepicker-range-separator">-</span>
+                                    <input placeholder="结束日期" name="" class="c-datepicker-data-input two-date" value="">
+                                </div>
+                            </div>
                             <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">姓名:</label>
                                 <input class="lz-form-item-input" type="text" autocomplete="off">
@@ -174,32 +185,23 @@
                                 <span class="lz-form-item-help"></span>
                                 <span class="lz-form-item-help"></span>
                             </div>
+
+                        </div>
+                        <div class="lz-form-row">
                             <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">医生:</label>
                                 <select class="me-select">
-                                    <option value="0">请选择</option>
-                                    <option value="1">梁医生</option>
-                                </select>
+                                            <option value="0">请选择</option>
+                                            <option value="1">梁医生</option>
+                                        </select>
                                 <span class="lz-form-item-help"></span>
                             </div>
-                        </div>
-                        <div class="lz-form-row">
-                            <div class="lz-col-1 lz-form-item" style="flex: 1.5;">
+                            <div class="lz-col-1 lz-form-item">
                                 <label class="lz-form-item-label">来源:</label>
                                 <select class="me-select">
-                                    <option value="0">请选择</option>
-                                    <option value="1">自费</option>
-                                </select>
-                                <span class="lz-form-item-help"></span>
-                            </div>
-                            <div class="lz-col-1 lz-form-item" style="flex: 1.5;">
-                                <label class="lz-form-item-label">挂号时间:</label>
-                                <input class="lz-form-item-input medicalAd-date" type="text" autocomplete="off">
-                                <span class="lz-form-item-help"></span>
-                            </div>
-                            <div class="lz-col-1 lz-form-item to-date" style="flex: 1.25;">
-                                <label class="lz-form-item-label">至</label>
-                                <input class="lz-form-item-input medicalAd-date" style="width: calc(100% - 40px);" type="text" autocomplete="off">
+                                        <option value="0">请选择</option>
+                                        <option value="1">自费</option>
+                                    </select>
                                 <span class="lz-form-item-help"></span>
                             </div>
                             <div class="lz-col-1 lz-form-item me-head-search">
@@ -279,16 +281,43 @@
         </div>
     </div>
     <script src="../../js/common/jquery/jquery-2.2.4.js"></script>
-    <script src="../../plugin/datepicker/js/dcalendar.picker.js"></script>
+    <script src="../../plugin/datepockerRange/js/moment.min.js"></script>
+    <script src="../../plugin/datepockerRange/js/datepicker.all.js"></script>
     <script src="../../plugin/select/js/jquery.nice-select.min.js"></script>
     <script src="../../plugin/switchTab/js/re-tabs-simplify.js"></script>
     <script>
         $(function() {
-            $('.medicalAd-date').dcalendarpicker({
-                format: 'yyyy-mm-dd'
-            });
             $('.me-select').niceSelect();
             $('.me-tab').resTabsSimp();
+            $('.J-datepicker-range-day').datePicker({
+                hasShortcut: true,
+                format: 'YYYY-MM-DD',
+                isRange: true,
+                shortcutOptions: [{
+                    name: '最近一周',
+                    day: '-7,0'
+                }, {
+                    name: '最近一个月',
+                    day: '-30,0'
+                }, {
+                    name: '最近三个月',
+                    day: '-90, 0'
+                }]
+            });
+            $('.J-datepicker-day').datePicker({
+                hasShortcut: true,
+                format: 'YYYY-MM-DD',
+                shortcutOptions: [{
+                    name: '今天',
+                    day: '0'
+                }, {
+                    name: '昨天',
+                    day: '-1'
+                }, {
+                    name: '一周前',
+                    day: '-7'
+                }]
+            });
         });
     </script>
 </body>
