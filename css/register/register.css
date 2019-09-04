@@ -53,3 +53,20 @@
     color: #2e69eb;
     cursor: pointer;
 }
+
+.get-phone-code {
+    margin-left: 20px;
+}
+
+.get-phone-code button {
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #2e69eb;
+    color: #2e69eb;
+}
+
+.get-phone-code button:active {
+    background-color: #2e69eb;
+    color: #fff;
+}
