@@ -32,10 +32,6 @@
     content: "\e61f"
 }
 
-a {
-    color: #20A0FF
-}
-
 *:before,
 *:after {
     -webkit-box-sizing: border-box;

@@ -44,6 +44,10 @@ body {
     margin-right: 10px;
 }
 
+.obc-head .search-btn {
+    margin-left: 20px;
+}
+
 .obc-cord-box {
     flex: 10;
     display: flex;
