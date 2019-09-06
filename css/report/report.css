@@ -26,6 +26,7 @@ body {
 .op-right {
     flex: 10;
     overflow: auto;
+    padding-left: 5px;
 }
 
 .ob-condition {
@@ -58,7 +59,7 @@ body {
 .obcc-left {
     flex: 1;
     margin: 10px 0;
-    box-shadow: 4px 5px 9px 2px rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
     border-radius: 12px;
     background-color: #e15249;
     display: flex;
@@ -122,12 +123,13 @@ body {
 
 .obc-report {
     flex: 10;
-    min-height: 300px;
-    box-shadow: 4px 5px 9px 2px rgba(0, 0, 0, .15);
+    min-height: 400px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
     border-radius: 12px;
     margin-right: 10px;
-    background-color: #F2F6FC;
+    background-color: #fff;
     margin-bottom: 30px;
+    padding: 5px
 }
 
 .ob-clinic {}

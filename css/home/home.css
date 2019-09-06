@@ -65,6 +65,18 @@ body {
     height: 400px;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
     border-radius: 10px;
-    background-color: #F2F6FC;
+    background-color: #fff;
     width: 100%;
+    padding: 5px;
+}
+
+.statistic-two {
+    margin: 20px 0;
+    display: inline-block;
+    height: 400px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    padding: 5px;
 }

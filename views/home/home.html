@@ -41,10 +41,29 @@
             <div class="statistic-one">
 
             </div>
+            <div class="statistic-two">
+
+            </div>
         </div>
     </div>
     <script src="../../js/common/jquery/jquery-2.2.4.js"></script>
+    <script src="home.js"></script>
+    <script src="../../js/common/highcharts/highcharts.js"></script>
     <script>
+        $(function() {
+            getOne();
+            getTwo();
+        })
+
+        function getOne() {
+            var json = getJsonOne();
+            $('.statistic-one').highcharts(json);
+        }
+
+        function getTwo() {
+            let json = getJsonTwo();
+            $('.statistic-two').highcharts(json);
+        }
     </script>
 </body>
 
