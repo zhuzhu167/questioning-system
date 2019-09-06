@@ -474,7 +474,7 @@ function getJsonTwo() {
 
     }, {
         name: 'Male',
-        color: 'rgba(119, 152, 191, .5)',
+        color: '#2e69eb',
         data: [
             [174.0, 65.6],
             [175.3, 71.8],

@@ -58,10 +58,6 @@
             </div>
             <div class="browsing-history">
                 <div class="tag-history is-select" onclick="toUrl(0)"><a><span>首页</span></a></div>
-                <div class="tag-history" onclick="toUrl(1)"><a><span>预约管理</span><i class="fa fa-times"
-                            aria-hidden="true"></i></a></div>
-                <div class="tag-history" onclick="toUrl(4)"><a><span>报表管理</span><i class="fa fa-times"
-                            aria-hidden="true"></i></a></div>
             </div>
             <div class="main-content">
                 <iframe src="../home/home.html"></iframe>
@@ -70,22 +66,25 @@
     </div>
     <script src="../../js/common/jquery/jquery-2.2.4.js "></script>
     <script src="index.js"></script>
+    <script src="../../plugin/navTab/js/navTab.js "></script>
     <script>
         // 视图模型
         // 视图层和数据层代码最好分开，便于维护，利用数据模型驱动视图模型
         // 不要每个函数写一大段，功能单元化，利用面向对象的思想写 function(){}
+        $(function() {
+            $('.menu-list-content').navTab('.browsing-history', tabToUrl);
+        })
+
         function toUrl(id) {
             var str = '<iframe src=" ' + url[id] + ' "></iframe>'
             $(".main-content ").empty();
             $(".main-content ").append(str);
         }
 
-        function toLogin() {
-            location.href = '../login/login.html'
-        }
-
-        function toRegister() {
-            location.href = '../register/register.html'
+        function tabToUrl(url) {
+            var str = '<iframe src=" ' + url + ' "></iframe>'
+            $(".main-content ").empty();
+            $(".main-content ").append(str);
         }
     </script>
 </body>

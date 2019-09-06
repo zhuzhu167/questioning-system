@@ -108,7 +108,8 @@
     padding: 10px;
     cursor: pointer;
 }
-.setting span:hover{
+
+.setting span:hover {
     color: #2e69eb;
 }
 
