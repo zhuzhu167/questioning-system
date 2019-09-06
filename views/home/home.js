@@ -1,6 +1,6 @@
 function getJsonOne() {
     var title = {
-        text: '城市平均气温'
+        text: 'demo'
     };
     var subtitle = {
         text: 'demo'

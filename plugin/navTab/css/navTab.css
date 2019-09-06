@@ -1,0 +1,21 @@
+.tag-history {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tag-history a {
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 4px 10px 5px 15px;
+    box-shadow: 5px -4px 10px -10px #555;
+}
+
+.tag-history span {
+    margin-right: 5px;
+}
+
+.is-select a {
+    background-color: #2e69eb;
+    color: #fff;
+}
