@@ -73,7 +73,10 @@
         // 视图层和数据层代码最好分开，便于维护，利用数据模型驱动视图模型
         // 不要每个函数写一大段，功能单元化，利用面向对象的思想写 function(){}
         $(function() {
-            $('.menu-list-content').navTab('.browsing-history', tabToUrl);
+            $('.menu-list-content').navTab({
+                showDom: '.browsing-history',
+                data: urlData
+            });
         })
 
         function toUrl(id) {

@@ -5,7 +5,6 @@
     $.fn.foldPanel = function() {
         var that = $(this);
         $(".subNav").click(function() {
-            console.log($(this).attr('class'))
             if ($(this).attr('class') == 'subNav') {
                 that.find('i')
                     .removeClass("fa-chevron-down")
