@@ -3,7 +3,8 @@
 // 此处只管数据操作，执行完 return 数据，不要有其他视图操作，增加代码可读性
 var url = ["../home/home.html ", "../appointment/appointment.html ", "../medicalAd/medicalAd.html ",
     "../registration/registration.html ", "../retail/retail.html ", "../report/report.html ",
-    "../set/set.html ", "../charge/charge.html", "../medicine/medicine.html"
+    "../set/set.html ", "../charge/charge.html", "../medicine/medicine.html",
+    "../archives/archives.html"
 ]
 
 var urlData = {
@@ -16,4 +17,5 @@ var urlData = {
     '设置': '../set/set.html',
     '药品管理': '../charge/charge.html',
     '收费发药': '../medicine/medicine.html',
+    '档案表': '../archives/archives.html',
 }

@@ -1,0 +1,53 @@
+#archives {
+    padding: 10px;
+}
+
+.archices-main {
+    /* border: 1px solid #ccc; */
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+.am-left {
+    flex: 1.7;
+    /* border-right: 1px solid #ccc; */
+}
+
+.am-left table {
+    border-collapse: collapse;
+}
+
+.am-left table td {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 2px 5px;
+    text-align: center;
+}
+
+.am-right {
+    flex: 2;
+}
+
+.amt-head {
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    border-left: 1px solid #ccc;
+}
+
+.am-check-box {
+    border-left: 1px solid #ccc;
+    width: 100%;
+}
+
+.amcb-head {
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    text-indent: 10px;
+}
+
+.amcb-check {
+    display: flex;
+}

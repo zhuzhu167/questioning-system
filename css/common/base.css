@@ -207,6 +207,23 @@ iframe {
     color: #fff;
 }
 
+.lz-table-input {
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: inherit;
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+}
+
 
 /* 统计价格栏 */
 
