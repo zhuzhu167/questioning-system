@@ -41,9 +41,44 @@
 }
 
 .amlcc-p {
-    display: inline-block;
-    margin-right: 16px;
+    margin-right: 20px;
     margin-bottom: 30px;
+}
+
+.am-p {
+    display: inline-block;
+}
+
+.am-p input {
+    width: 16px;
+    height: 16px;
+    margin-top: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.am-p input:hover {
+    border-color: #2e69eb;
+}
+
+.am-p input:checked {
+    color: #fff;
+    background-color: #2e69eb;
+    border: 1px solid #2e69eb;
+}
+
+.am-p input:after {
+    content: "✔";
 }
 
 .aml-checkbox {
@@ -51,6 +86,10 @@
     vertical-align: bottom;
     margin-bottom: 0px;
     margin-left: 10px;
+}
+
+.aml-checkbox :checked {
+    color: #000;
 }
 
 .amlccp-head {
