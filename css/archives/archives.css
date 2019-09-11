@@ -1,5 +1,15 @@
 #archives {
     padding: 10px;
+    font-size: 13px;
+    min-height: 750px;
+}
+
+.archives-btn {
+    float: right;
+}
+
+.archives-btn button {
+    padding: 7px 13px;
 }
 
 .archices-main {
@@ -8,25 +18,55 @@
     height: calc(100% - 60px);
 }
 
-.am-left {
-    flex: 1.7;
-    /* border-right: 1px solid #ccc; */
-}
-
-.am-left table {
+.archices-main table {
     border-collapse: collapse;
+    width: 100%;
+    border-right: 1px solid #ccc;
 }
 
-.am-left table td {
+.archices-main table td {
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
     padding: 2px 5px;
     text-align: center;
 }
 
+.am-left {
+    flex: 1.5;
+    /* border-right: 1px solid #ccc; */
+}
+
+.aml-check-content {
+    padding: 20px 10px;
+}
+
+.amlcc-p {
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: 30px;
+}
+
+.aml-checkbox {
+    height: 15px;
+    vertical-align: bottom;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.amlccp-head {
+    margin-bottom: 20px;
+}
+
+.aml-res {
+    border-bottom: 1px solid #ccc;
+}
+
 .am-right {
+    padding-left: 10px;
     flex: 2;
 }
+
+.amrcc-p {}
 
 .amt-head {
     height: 35px;

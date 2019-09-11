@@ -85,13 +85,14 @@ iframe {
     border-radius: 4px;
 }
 
-.lz-btn-default:hover {
+.lz-btn-default {
+    background-color: #fff;
     color: #2e69eb;
 }
 
 .lz-btn-default:active {
-    background-color: #2e69eb;
-    color: #fff;
+    color: #2e69eb;
+    border-color: #2e60eb;
 }
 
 .lz-btn-primary {
@@ -160,7 +161,7 @@ iframe {
     height: 30px;
     line-height: 30px;
     outline: 0;
-    padding: 0 15px;
+    padding: 0 10px;
     transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
     float: right;
 }
@@ -214,13 +215,13 @@ iframe {
     background-image: none;
     border: none;
     box-sizing: border-box;
-    color: #606266;
+    color: #2e69eb;
     display: inline-block;
     font-size: inherit;
     height: 30px;
     line-height: 30px;
     outline: 0;
-    padding: 0 15px;
+    padding: 0 10px;
     transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
 }
 

@@ -17,123 +17,372 @@
         <div class="lz-form-head">
             青少年视力康复中心档案表
         </div>
+        <div class="archives-btn">
+            <button type="button" class="lz-btn lz-btn-primary">提交</button>
+            <button type="button" class="lz-btn lz-btn-default">清空</button>
+        </div>
         <div class="archices-main">
             <div class="am-left">
                 <table>
                     <tr>
-                        <td width="6%">姓名</td>
+                        <td>姓名</td>
                         <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td width="6%">性别</td>
+                        <td>性别</td>
                         <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td width="6%">年龄</td>
+
+                    </tr>
+                    <tr>
+                        <td>年龄</td>
                         <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td width="6%">学校</td>
+                        <td>学校</td>
                         <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <td width="6%">身高</td>
+                        <td>身高</td>
                         <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td width="6%">体重</td>
+                        <td>体重</td>
                         <td>
-                            <input class="lz-table-input" autocomplete="off" type="text">
-                        </td>
-                        <td colspan="2">兴趣爱好</td>
-                        <td colspan="2">
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <td width="6%">家长姓名</td>
+                        <td>兴趣爱好</td>
                         <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td width="6%">电话号码</td>
-                        <td colspan="2">
+                        <td>家长姓名</td>
+                        <td>
+                            <input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>电话号码</td>
+                        <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
                         <td>职业</td>
-                        <td colspan="2">
-                            <input class="lz-table-input" autocomplete="off" type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="8">
-                            <h2>调理视力情况</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td width="6%">是否佩戴眼镜</td>
-                        <td>
-                            <input class="lz-table-input" autocomplete="off" type="text">
-                        </td>
-                        <td width="6%">佩戴眼镜度数</td>
-                        <td>
-                            <input class="lz-table-input" autocomplete="off" type="text">
-                        </td>
-                        <td width="6%">佩戴时间</td>
-                        <td>
-                            <input class="lz-table-input" autocomplete="off" type="text">
-                        </td>
-                        <td width="6%">更换情况</td>
                         <td>
                             <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="8">
-                            <h2>视力及其他情况</h2>
+                        <td colspan="4">
+                            <h2 style="margin: 10px 0;">调理视力情况</h2>
                         </td>
                     </tr>
                     <tr>
-                        <td>青光眼</td>
+                        <td>是否佩戴眼镜</td>
                         <td>
-                            <input autocomplete="off" type="checkbox">
+                            <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td>散光</td>
+                        <td>佩戴眼镜度数</td>
                         <td>
-                            <input autocomplete="off" type="checkbox">
+                            <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td>近视</td>
+
+                    </tr>
+                    <tr style="border-bottom: 1px solid #ccc;">
+                        <td>佩戴时间</td>
                         <td>
-                            <input autocomplete="off" type="checkbox">
+                            <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td>弱视</td>
+                        <td>更换情况</td>
                         <td>
-                            <input autocomplete="off" type="checkbox">
+                            <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
                     </tr>
+                </table>
+                <div class="aml-check-content">
+
+                    <div class="amlccp-head">
+                        <h3>视力及其他情况：</h3>
+                    </div>
+                    <p class="amlcc-p">青光眼<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">散光<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">近视<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">弱视<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">斜视<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">遗传<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">眼干<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">眼涩<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">父母或孩子是否患过肝炎<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">是否患过肺炎<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">有无糖尿病<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">有无心脏病<input class="aml-checkbox" autocomplete="off" type="checkbox"></p><br>
+                    <p class="amlcc-p">不良用眼<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">使用电子类产品<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">睡眠质量<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <div class="amlccp-head">
+                        <h3>摘掉眼镜检测视力时眼镜的状态：</h3>
+                    </div>
+                    <p class="amlcc-p">完全眯眼<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">半眯状态<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                    <p class="amlcc-p">不眯眼睛<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+
+                </div>
+                <table class="aml-res">
                     <tr>
-                        <td>斜视</td>
+                        <td>眼部是否做过手术</td>
                         <td>
-                            <input autocomplete="off" type="checkbox">
+                            <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td>遗传</td>
+                        <td>咨询诊断结果</td>
                         <td>
-                            <input class="lz-table-input" autocomplete="off" type="checkbox">
+                            <input class="lz-table-input" autocomplete="off" type="text">
                         </td>
-                        <td>眼干</td>
-                        <td>
-                            <input class="lz-table-input" autocomplete="off" type="checkbox">
-                        </td>
-                        <td>眼涩</td>
-                        <td>
-                            <input class="lz-table-input" autocomplete="off" type="checkbox">
-                        </td>
+
                     </tr>
                 </table>
             </div>
             <div class="am-right">
-                表格
+                <table>
+                    <tr>
+                        <td width="12.5%" rowspan="5">初次裸眼视力</td>
+                        <td>距离</td>
+                        <td colspan="2">双眼</td>
+                        <td colspan="2">左眼</td>
+                        <td colspan="2">右眼</td>
+                    </tr>
+                    <tr>
+                        <td width="12.5%" rowspan="2">5米</td>
+                        <td width="12.5%">眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td width="12.5%">眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td width="12.5%">眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3米</td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">初次戴眼镜视力</td>
+                        <td>距离</td>
+                        <td colspan="2">双眼</td>
+                        <td colspan="2">左眼</td>
+                        <td colspan="2">右眼</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">5米</td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3米</td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">第一次体验后裸眼结果</td>
+                        <td>距离</td>
+                        <td colspan="2">双眼</td>
+                        <td colspan="2">左眼</td>
+                        <td colspan="2">右眼</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">5米</td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3米</td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">第一次体验后戴眼镜结果</td>
+                        <td>距离</td>
+                        <td colspan="2">双眼</td>
+                        <td colspan="2">左眼</td>
+                        <td colspan="2">右眼</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">5米</td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3米</td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                        <td>不眯测</td>
+                        <td><input class="lz-table-input" autocomplete="off" type="text">
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #ccc;">
+                        <td height="30px;">调理方案：</td>
+                        <td>
+                            <p>体验卡<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                        </td>
+                        <td>
+                            <p>周卡<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                        </td>
+                        <td>
+                            <p>15次<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                        </td>
+                        <td>
+                            <p>30次<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                        </td>
+                        <td>
+                            <p>60次<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                        </td>
+                        <td>
+                            <p>90次<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                        </td>
+                        <td>
+                            <p>养护卡<input class="aml-checkbox" autocomplete="off" type="checkbox"></p>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="am-buttom"></div>
         </div>
