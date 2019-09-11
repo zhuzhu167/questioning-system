@@ -71,7 +71,7 @@
         that.on('focus', function() {
             var parentWid = that.parent().width();
             var inputWid = that.width();
-            var domLeft = parentWid - inputWid - 32;
+            var domLeft = parentWid - inputWid - 22;
             that.siblings('div.select-more-box')
                 .css({
                     'width': _setting.width != 0 ? _setting.width : 'calc(100% - 70px)',
